@@ -1,0 +1,2663 @@
+{
+  "finetuned-rag": {
+    "overall": {
+      "n": 200,
+      "answered": 200,
+      "auto": {
+        "refused_unanswerable": 1.0,
+        "refused_answerable": 0.039,
+        "no_sources_refusals": 5,
+        "retrieval_hit": 0.872,
+        "gold_passage_recall": 0.785,
+        "verdict_accuracy": 0.817,
+        "verdict_unclear": 4,
+        "cites": 1.0,
+        "citation_resolution_match": 0.96,
+        "citation_match": 0.89,
+        "median_seconds": 31.8
+      },
+      "judge": {
+        "judged": 200,
+        "correctness_mean": 1.47,
+        "correctness_raw_mean": 1.495,
+        "correctness_capped": 5,
+        "correctness_2": 0.58,
+        "correctness_0": 0.11,
+        "key_point_coverage": 0.76,
+        "short_answer_match": 0.875,
+        "abstention_correct": 0.965,
+        "abstained_unanswerable": 1.0,
+        "abstained_answerable": 0.039,
+        "citation_matches_gold": {
+          "full": 107,
+          "partial": 48,
+          "none": 25
+        },
+        "citation_status": {
+          "supported": 174,
+          "misattributed": 6
+        },
+        "faithfulness_mean": 1.925,
+        "contradiction": 0.06,
+        "must_not_violated": 0.055,
+        "language_pt": 1.0,
+        "foreign_law": 0.0,
+        "with_other_rule_errors": 0
+      }
+    },
+    "by_answerable": {
+      "no": {
+        "n": 20,
+        "answered": 20,
+        "auto": {
+          "refused_unanswerable": 1.0,
+          "refused_answerable": null,
+          "no_sources_refusals": 5,
+          "retrieval_hit": null,
+          "gold_passage_recall": null,
+          "verdict_accuracy": null,
+          "verdict_unclear": 0,
+          "cites": null,
+          "citation_resolution_match": null,
+          "citation_match": null,
+          "median_seconds": 27.0
+        },
+        "judge": {
+          "judged": 20,
+          "correctness_mean": 2.0,
+          "correctness_raw_mean": 2.0,
+          "correctness_capped": 0,
+          "correctness_2": 1.0,
+          "correctness_0": 0.0,
+          "key_point_coverage": null,
+          "short_answer_match": null,
+          "abstention_correct": 1.0,
+          "abstained_unanswerable": 1.0,
+          "abstained_answerable": null,
+          "citation_matches_gold": {},
+          "citation_status": {},
+          "faithfulness_mean": null,
+          "contradiction": 0.0,
+          "must_not_violated": 0.0,
+          "language_pt": 1.0,
+          "foreign_law": 0.0,
+          "with_other_rule_errors": 0
+        }
+      },
+      "yes": {
+        "n": 180,
+        "answered": 180,
+        "auto": {
+          "refused_unanswerable": null,
+          "refused_answerable": 0.039,
+          "no_sources_refusals": 0,
+          "retrieval_hit": 0.872,
+          "gold_passage_recall": 0.785,
+          "verdict_accuracy": 0.817,
+          "verdict_unclear": 4,
+          "cites": 1.0,
+          "citation_resolution_match": 0.96,
+          "citation_match": 0.89,
+          "median_seconds": 32.7
+        },
+        "judge": {
+          "judged": 180,
+          "correctness_mean": 1.411,
+          "correctness_raw_mean": 1.439,
+          "correctness_capped": 5,
+          "correctness_2": 0.533,
+          "correctness_0": 0.122,
+          "key_point_coverage": 0.76,
+          "short_answer_match": 0.875,
+          "abstention_correct": 0.961,
+          "abstained_unanswerable": null,
+          "abstained_answerable": 0.039,
+          "citation_matches_gold": {
+            "full": 107,
+            "partial": 48,
+            "none": 25
+          },
+          "citation_status": {
+            "supported": 174,
+            "misattributed": 6
+          },
+          "faithfulness_mean": 1.925,
+          "contradiction": 0.067,
+          "must_not_violated": 0.061,
+          "language_pt": 1.0,
+          "foreign_law": 0.0,
+          "with_other_rule_errors": 0
+        }
+      }
+    },
+    "by_question_type": {
+      "binary": {
+        "n": 82,
+        "answered": 82,
+        "auto": {
+          "refused_unanswerable": null,
+          "refused_answerable": 0.049,
+          "no_sources_refusals": 0,
+          "retrieval_hit": 0.829,
+          "gold_passage_recall": 0.724,
+          "verdict_accuracy": 0.817,
+          "verdict_unclear": 4,
+          "cites": 1.0,
+          "citation_resolution_match": 0.936,
+          "citation_match": 0.846,
+          "median_seconds": 32.5
+        },
+        "judge": {
+          "judged": 82,
+          "correctness_mean": 1.317,
+          "correctness_raw_mean": 1.354,
+          "correctness_capped": 3,
+          "correctness_2": 0.463,
+          "correctness_0": 0.146,
+          "key_point_coverage": 0.694,
+          "short_answer_match": 0.89,
+          "abstention_correct": 0.951,
+          "abstained_unanswerable": null,
+          "abstained_answerable": 0.049,
+          "citation_matches_gold": {
+            "full": 44,
+            "partial": 22,
+            "none": 16
+          },
+          "citation_status": {
+            "supported": 78,
+            "misattributed": 2
+          },
+          "faithfulness_mean": 1.936,
+          "contradiction": 0.073,
+          "must_not_violated": 0.049,
+          "language_pt": 1.0,
+          "foreign_law": 0.0,
+          "with_other_rule_errors": 0
+        }
+      },
+      "explanatory": {
+        "n": 32,
+        "answered": 32,
+        "auto": {
+          "refused_unanswerable": null,
+          "refused_answerable": 0.031,
+          "no_sources_refusals": 0,
+          "retrieval_hit": 0.906,
+          "gold_passage_recall": 0.773,
+          "verdict_accuracy": null,
+          "verdict_unclear": 0,
+          "cites": 1.0,
+          "citation_resolution_match": 0.968,
+          "citation_match": 0.903,
+          "median_seconds": 34.8
+        },
+        "judge": {
+          "judged": 32,
+          "correctness_mean": 1.25,
+          "correctness_raw_mean": 1.281,
+          "correctness_capped": 1,
+          "correctness_2": 0.344,
+          "correctness_0": 0.094,
+          "key_point_coverage": 0.676,
+          "short_answer_match": null,
+          "abstention_correct": 0.969,
+          "abstained_unanswerable": null,
+          "abstained_answerable": 0.031,
+          "citation_matches_gold": {
+            "partial": 16,
+            "full": 13,
+            "none": 3
+          },
+          "citation_status": {
+            "supported": 33,
+            "misattributed": 1
+          },
+          "faithfulness_mean": 1.871,
+          "contradiction": 0.062,
+          "must_not_violated": 0.062,
+          "language_pt": 1.0,
+          "foreign_law": 0.0,
+          "with_other_rule_errors": 0
+        }
+      },
+      "factual": {
+        "n": 30,
+        "answered": 30,
+        "auto": {
+          "refused_unanswerable": null,
+          "refused_answerable": 0.067,
+          "no_sources_refusals": 0,
+          "retrieval_hit": 0.867,
+          "gold_passage_recall": 0.839,
+          "verdict_accuracy": null,
+          "verdict_unclear": 0,
+          "cites": 1.0,
+          "citation_resolution_match": 1.0,
+          "citation_match": 0.929,
+          "median_seconds": 30.4
+        },
+        "judge": {
+          "judged": 30,
+          "correctness_mean": 1.533,
+          "correctness_raw_mean": 1.567,
+          "correctness_capped": 1,
+          "correctness_2": 0.7,
+          "correctness_0": 0.167,
+          "key_point_coverage": 0.827,
+          "short_answer_match": 0.833,
+          "abstention_correct": 0.933,
+          "abstained_unanswerable": null,
+          "abstained_answerable": 0.067,
+          "citation_matches_gold": {
+            "full": 23,
+            "none": 4,
+            "partial": 3
+          },
+          "citation_status": {
+            "supported": 27,
+            "misattributed": 2
+          },
+          "faithfulness_mean": 1.857,
+          "contradiction": 0.067,
+          "must_not_violated": 0.033,
+          "language_pt": 1.0,
+          "foreign_law": 0.0,
+          "with_other_rule_errors": 0
+        }
+      },
+      "list": {
+        "n": 36,
+        "answered": 36,
+        "auto": {
+          "refused_unanswerable": null,
+          "refused_answerable": 0.0,
+          "no_sources_refusals": 0,
+          "retrieval_hit": 0.944,
+          "gold_passage_recall": 0.889,
+          "verdict_accuracy": null,
+          "verdict_unclear": 0,
+          "cites": 1.0,
+          "citation_resolution_match": 0.972,
+          "citation_match": 0.944,
+          "median_seconds": 33.4
+        },
+        "judge": {
+          "judged": 36,
+          "correctness_mean": 1.667,
+          "correctness_raw_mean": 1.667,
+          "correctness_capped": 0,
+          "correctness_2": 0.722,
+          "correctness_0": 0.056,
+          "key_point_coverage": 0.894,
+          "short_answer_match": null,
+          "abstention_correct": 1.0,
+          "abstained_unanswerable": null,
+          "abstained_answerable": 0.0,
+          "citation_matches_gold": {
+            "partial": 7,
+            "full": 27,
+            "none": 2
+          },
+          "citation_status": {
+            "supported": 36,
+            "misattributed": 1
+          },
+          "faithfulness_mean": 2.0,
+          "contradiction": 0.056,
+          "must_not_violated": 0.111,
+          "language_pt": 1.0,
+          "foreign_law": 0.0,
+          "with_other_rule_errors": 0
+        }
+      }
+    },
+    "by_source_document": {
+      "cfm_res_1805_2006": {
+        "n": 8,
+        "answered": 8,
+        "auto": {
+          "refused_unanswerable": null,
+          "refused_answerable": 0.0,
+          "no_sources_refusals": 0,
+          "retrieval_hit": 0.875,
+          "gold_passage_recall": 0.708,
+          "verdict_accuracy": 0.75,
+          "verdict_unclear": 0,
+          "cites": 1.0,
+          "citation_resolution_match": 1.0,
+          "citation_match": 0.875,
+          "median_seconds": 33.0
+        },
+        "judge": {
+          "judged": 8,
+          "correctness_mean": 1.375,
+          "correctness_raw_mean": 1.375,
+          "correctness_capped": 0,
+          "correctness_2": 0.375,
+          "correctness_0": 0.0,
+          "key_point_coverage": 0.674,
+          "short_answer_match": 1.0,
+          "abstention_correct": 1.0,
+          "abstained_unanswerable": null,
+          "abstained_answerable": 0.0,
+          "citation_matches_gold": {
+            "partial": 4,
+            "full": 3,
+            "none": 1
+          },
+          "citation_status": {
+            "supported": 7,
+            "misattributed": 1
+          },
+          "faithfulness_mean": 2.0,
+          "contradiction": 0.0,
+          "must_not_violated": 0.0,
+          "language_pt": 1.0,
+          "foreign_law": 0.0,
+          "with_other_rule_errors": 0
+        }
+      },
+      "cfm_res_1821_2007": {
+        "n": 14,
+        "answered": 14,
+        "auto": {
+          "refused_unanswerable": null,
+          "refused_answerable": 0.0,
+          "no_sources_refusals": 0,
+          "retrieval_hit": 1.0,
+          "gold_passage_recall": 0.814,
+          "verdict_accuracy": 0.833,
+          "verdict_unclear": 0,
+          "cites": 1.0,
+          "citation_resolution_match": 1.0,
+          "citation_match": 1.0,
+          "median_seconds": 31.4
+        },
+        "judge": {
+          "judged": 14,
+          "correctness_mean": 1.5,
+          "correctness_raw_mean": 1.571,
+          "correctness_capped": 1,
+          "correctness_2": 0.5,
+          "correctness_0": 0.0,
+          "key_point_coverage": 0.729,
+          "short_answer_match": 0.889,
+          "abstention_correct": 1.0,
+          "abstained_unanswerable": null,
+          "abstained_answerable": 0.0,
+          "citation_matches_gold": {
+            "full": 8,
+            "partial": 6
+          },
+          "citation_status": {
+            "supported": 14
+          },
+          "faithfulness_mean": 2.0,
+          "contradiction": 0.0,
+          "must_not_violated": 0.071,
+          "language_pt": 1.0,
+          "foreign_law": 0.0,
+          "with_other_rule_errors": 0
+        }
+      },
+      "cfm_res_1995_2012": {
+        "n": 8,
+        "answered": 8,
+        "auto": {
+          "refused_unanswerable": null,
+          "refused_answerable": 0.125,
+          "no_sources_refusals": 0,
+          "retrieval_hit": 0.875,
+          "gold_passage_recall": 0.875,
+          "verdict_accuracy": 1.0,
+          "verdict_unclear": 0,
+          "cites": 1.0,
+          "citation_resolution_match": 1.0,
+          "citation_match": 1.0,
+          "median_seconds": 31.2
+        },
+        "judge": {
+          "judged": 8,
+          "correctness_mean": 1.125,
+          "correctness_raw_mean": 1.25,
+          "correctness_capped": 1,
+          "correctness_2": 0.375,
+          "correctness_0": 0.25,
+          "key_point_coverage": 0.706,
+          "short_answer_match": 0.8,
+          "abstention_correct": 0.875,
+          "abstained_unanswerable": null,
+          "abstained_answerable": 0.125,
+          "citation_matches_gold": {
+            "full": 7,
+            "none": 1
+          },
+          "citation_status": {
+            "supported": 8
+          },
+          "faithfulness_mean": 2.0,
+          "contradiction": 0.0,
+          "must_not_violated": 0.0,
+          "language_pt": 1.0,
+          "foreign_law": 0.0,
+          "with_other_rule_errors": 0
+        }
+      },
+      "cfm_res_1999_2012": {
+        "n": 13,
+        "answered": 13,
+        "auto": {
+          "refused_unanswerable": null,
+          "refused_answerable": 0.0,
+          "no_sources_refusals": 0,
+          "retrieval_hit": 0.846,
+          "gold_passage_recall": 0.705,
+          "verdict_accuracy": 0.857,
+          "verdict_unclear": 0,
+          "cites": 1.0,
+          "citation_resolution_match": 0.923,
+          "citation_match": 0.846,
+          "median_seconds": 33.7
+        },
+        "judge": {
+          "judged": 13,
+          "correctness_mean": 1.308,
+          "correctness_raw_mean": 1.385,
+          "correctness_capped": 1,
+          "correctness_2": 0.385,
+          "correctness_0": 0.077,
+          "key_point_coverage": 0.786,
+          "short_answer_match": 1.0,
+          "abstention_correct": 1.0,
+          "abstained_unanswerable": null,
+          "abstained_answerable": 0.0,
+          "citation_matches_gold": {
+            "partial": 6,
+            "none": 2,
+            "full": 5
+          },
+          "citation_status": {
+            "supported": 13
+          },
+          "faithfulness_mean": 2.0,
+          "contradiction": 0.077,
+          "must_not_violated": 0.154,
+          "language_pt": 1.0,
+          "foreign_law": 0.0,
+          "with_other_rule_errors": 0
+        }
+      },
+      "cfm_res_2004_2012": {
+        "n": 10,
+        "answered": 10,
+        "auto": {
+          "refused_unanswerable": null,
+          "refused_answerable": 0.0,
+          "no_sources_refusals": 0,
+          "retrieval_hit": 1.0,
+          "gold_passage_recall": 1.0,
+          "verdict_accuracy": 1.0,
+          "verdict_unclear": 0,
+          "cites": 1.0,
+          "citation_resolution_match": 1.0,
+          "citation_match": 1.0,
+          "median_seconds": 32.2
+        },
+        "judge": {
+          "judged": 10,
+          "correctness_mean": 1.8,
+          "correctness_raw_mean": 1.8,
+          "correctness_capped": 0,
+          "correctness_2": 0.8,
+          "correctness_0": 0.0,
+          "key_point_coverage": 0.792,
+          "short_answer_match": 1.0,
+          "abstention_correct": 1.0,
+          "abstained_unanswerable": null,
+          "abstained_answerable": 0.0,
+          "citation_matches_gold": {
+            "full": 10
+          },
+          "citation_status": {
+            "supported": 10
+          },
+          "faithfulness_mean": 2.0,
+          "contradiction": 0.0,
+          "must_not_violated": 0.0,
+          "language_pt": 1.0,
+          "foreign_law": 0.0,
+          "with_other_rule_errors": 0
+        }
+      },
+      "cfm_res_2217_2018": {
+        "n": 57,
+        "answered": 57,
+        "auto": {
+          "refused_unanswerable": null,
+          "refused_answerable": 0.07,
+          "no_sources_refusals": 0,
+          "retrieval_hit": 0.877,
+          "gold_passage_recall": 0.822,
+          "verdict_accuracy": 0.72,
+          "verdict_unclear": 3,
+          "cites": 1.0,
+          "citation_resolution_match": 0.962,
+          "citation_match": 0.906,
+          "median_seconds": 31.8
+        },
+        "judge": {
+          "judged": 57,
+          "correctness_mean": 1.456,
+          "correctness_raw_mean": 1.474,
+          "correctness_capped": 1,
+          "correctness_2": 0.649,
+          "correctness_0": 0.193,
+          "key_point_coverage": 0.836,
+          "short_answer_match": 0.781,
+          "abstention_correct": 0.93,
+          "abstained_unanswerable": null,
+          "abstained_answerable": 0.07,
+          "citation_matches_gold": {
+            "full": 39,
+            "partial": 9,
+            "none": 9
+          },
+          "citation_status": {
+            "supported": 53,
+            "misattributed": 2
+          },
+          "faithfulness_mean": 1.925,
+          "contradiction": 0.088,
+          "must_not_violated": 0.035,
+          "language_pt": 1.0,
+          "foreign_law": 0.0,
+          "with_other_rule_errors": 0
+        }
+      },
+      "cfm_res_2232_2019": {
+        "n": 11,
+        "answered": 11,
+        "auto": {
+          "refused_unanswerable": null,
+          "refused_answerable": 0.0,
+          "no_sources_refusals": 0,
+          "retrieval_hit": 1.0,
+          "gold_passage_recall": 0.788,
+          "verdict_accuracy": 1.0,
+          "verdict_unclear": 0,
+          "cites": 1.0,
+          "citation_resolution_match": 1.0,
+          "citation_match": 1.0,
+          "median_seconds": 30.8
+        },
+        "judge": {
+          "judged": 11,
+          "correctness_mean": 1.455,
+          "correctness_raw_mean": 1.455,
+          "correctness_capped": 0,
+          "correctness_2": 0.455,
+          "correctness_0": 0.0,
+          "key_point_coverage": 0.676,
+          "short_answer_match": 1.0,
+          "abstention_correct": 1.0,
+          "abstained_unanswerable": null,
+          "abstained_answerable": 0.0,
+          "citation_matches_gold": {
+            "partial": 5,
+            "full": 6
+          },
+          "citation_status": {
+            "supported": 12
+          },
+          "faithfulness_mean": 1.909,
+          "contradiction": 0.091,
+          "must_not_violated": 0.091,
+          "language_pt": 1.0,
+          "foreign_law": 0.0,
+          "with_other_rule_errors": 0
+        }
+      },
+      "cfm_res_2314_2022": {
+        "n": 21,
+        "answered": 21,
+        "auto": {
+          "refused_unanswerable": null,
+          "refused_answerable": 0.048,
+          "no_sources_refusals": 0,
+          "retrieval_hit": 0.857,
+          "gold_passage_recall": 0.81,
+          "verdict_accuracy": 0.667,
+          "verdict_unclear": 0,
+          "cites": 1.0,
+          "citation_resolution_match": 0.9,
+          "citation_match": 0.85,
+          "median_seconds": 34.4
+        },
+        "judge": {
+          "judged": 21,
+          "correctness_mean": 1.429,
+          "correctness_raw_mean": 1.429,
+          "correctness_capped": 0,
+          "correctness_2": 0.619,
+          "correctness_0": 0.19,
+          "key_point_coverage": 0.78,
+          "short_answer_match": 0.769,
+          "abstention_correct": 0.952,
+          "abstained_unanswerable": null,
+          "abstained_answerable": 0.048,
+          "citation_matches_gold": {
+            "full": 12,
+            "none": 4,
+            "partial": 5
+          },
+          "citation_status": {
+            "supported": 19,
+            "misattributed": 2
+          },
+          "faithfulness_mean": 1.8,
+          "contradiction": 0.143,
+          "must_not_violated": 0.095,
+          "language_pt": 1.0,
+          "foreign_law": 0.0,
+          "with_other_rule_errors": 0
+        }
+      },
+      "cfm_res_2327_2022": {
+        "n": 9,
+        "answered": 9,
+        "auto": {
+          "refused_unanswerable": null,
+          "refused_answerable": 0.0,
+          "no_sources_refusals": 0,
+          "retrieval_hit": 0.667,
+          "gold_passage_recall": 0.593,
+          "verdict_accuracy": 0.8,
+          "verdict_unclear": 0,
+          "cites": 1.0,
+          "citation_resolution_match": 0.778,
+          "citation_match": 0.778,
+          "median_seconds": 29.6
+        },
+        "judge": {
+          "judged": 9,
+          "correctness_mean": 1.556,
+          "correctness_raw_mean": 1.556,
+          "correctness_capped": 0,
+          "correctness_2": 0.556,
+          "correctness_0": 0.0,
+          "key_point_coverage": 0.725,
+          "short_answer_match": 1.0,
+          "abstention_correct": 1.0,
+          "abstained_unanswerable": null,
+          "abstained_answerable": 0.0,
+          "citation_matches_gold": {
+            "partial": 2,
+            "full": 5,
+            "none": 2
+          },
+          "citation_status": {
+            "supported": 10
+          },
+          "faithfulness_mean": 1.889,
+          "contradiction": 0.0,
+          "must_not_violated": 0.0,
+          "language_pt": 1.0,
+          "foreign_law": 0.0,
+          "with_other_rule_errors": 0
+        }
+      },
+      "cfm_res_2333_2023": {
+        "n": 10,
+        "answered": 10,
+        "auto": {
+          "refused_unanswerable": null,
+          "refused_answerable": 0.0,
+          "no_sources_refusals": 0,
+          "retrieval_hit": 0.8,
+          "gold_passage_recall": 0.75,
+          "verdict_accuracy": 1.0,
+          "verdict_unclear": 0,
+          "cites": 1.0,
+          "citation_resolution_match": 1.0,
+          "citation_match": 0.7,
+          "median_seconds": 33.6
+        },
+        "judge": {
+          "judged": 10,
+          "correctness_mean": 1.4,
+          "correctness_raw_mean": 1.5,
+          "correctness_capped": 1,
+          "correctness_2": 0.5,
+          "correctness_0": 0.1,
+          "key_point_coverage": 0.81,
+          "short_answer_match": 1.0,
+          "abstention_correct": 1.0,
+          "abstained_unanswerable": null,
+          "abstained_answerable": 0.0,
+          "citation_matches_gold": {
+            "none": 2,
+            "partial": 4,
+            "full": 4
+          },
+          "citation_status": {
+            "supported": 11
+          },
+          "faithfulness_mean": 2.0,
+          "contradiction": 0.1,
+          "must_not_violated": 0.1,
+          "language_pt": 1.0,
+          "foreign_law": 0.0,
+          "with_other_rule_errors": 0
+        }
+      },
+      "cfm_res_2336_2023": {
+        "n": 19,
+        "answered": 19,
+        "auto": {
+          "refused_unanswerable": null,
+          "refused_answerable": 0.053,
+          "no_sources_refusals": 0,
+          "retrieval_hit": 0.789,
+          "gold_passage_recall": 0.667,
+          "verdict_accuracy": 0.889,
+          "verdict_unclear": 1,
+          "cites": 1.0,
+          "citation_resolution_match": 1.0,
+          "citation_match": 0.833,
+          "median_seconds": 35.1
+        },
+        "judge": {
+          "judged": 19,
+          "correctness_mean": 1.105,
+          "correctness_raw_mean": 1.105,
+          "correctness_capped": 0,
+          "correctness_2": 0.263,
+          "correctness_0": 0.158,
+          "key_point_coverage": 0.615,
+          "short_answer_match": 0.846,
+          "abstention_correct": 0.947,
+          "abstained_unanswerable": null,
+          "abstained_answerable": 0.053,
+          "citation_matches_gold": {
+            "partial": 7,
+            "full": 8,
+            "none": 4
+          },
+          "citation_status": {
+            "supported": 17,
+            "misattributed": 1
+          },
+          "faithfulness_mean": 1.833,
+          "contradiction": 0.053,
+          "must_not_violated": 0.105,
+          "language_pt": 1.0,
+          "foreign_law": 0.0,
+          "with_other_rule_errors": 0
+        }
+      }
+    },
+    "by_unanswerable_kind": {
+      "near_miss": {
+        "n": 10,
+        "answered": 10,
+        "auto": {
+          "refused_unanswerable": 1.0,
+          "refused_answerable": null,
+          "no_sources_refusals": 1,
+          "retrieval_hit": null,
+          "gold_passage_recall": null,
+          "verdict_accuracy": null,
+          "verdict_unclear": 0,
+          "cites": null,
+          "citation_resolution_match": null,
+          "citation_match": null,
+          "median_seconds": 28.8
+        },
+        "judge": {
+          "judged": 10,
+          "correctness_mean": 2.0,
+          "correctness_raw_mean": 2.0,
+          "correctness_capped": 0,
+          "correctness_2": 1.0,
+          "correctness_0": 0.0,
+          "key_point_coverage": null,
+          "short_answer_match": null,
+          "abstention_correct": 1.0,
+          "abstained_unanswerable": 1.0,
+          "abstained_answerable": null,
+          "citation_matches_gold": {},
+          "citation_status": {},
+          "faithfulness_mean": null,
+          "contradiction": 0.0,
+          "must_not_violated": 0.0,
+          "language_pt": 1.0,
+          "foreign_law": 0.0,
+          "with_other_rule_errors": 0
+        }
+      },
+      "out_of_scope": {
+        "n": 10,
+        "answered": 10,
+        "auto": {
+          "refused_unanswerable": 1.0,
+          "refused_answerable": null,
+          "no_sources_refusals": 4,
+          "retrieval_hit": null,
+          "gold_passage_recall": null,
+          "verdict_accuracy": null,
+          "verdict_unclear": 0,
+          "cites": null,
+          "citation_resolution_match": null,
+          "citation_match": null,
+          "median_seconds": 20.8
+        },
+        "judge": {
+          "judged": 10,
+          "correctness_mean": 2.0,
+          "correctness_raw_mean": 2.0,
+          "correctness_capped": 0,
+          "correctness_2": 1.0,
+          "correctness_0": 0.0,
+          "key_point_coverage": null,
+          "short_answer_match": null,
+          "abstention_correct": 1.0,
+          "abstained_unanswerable": 1.0,
+          "abstained_answerable": null,
+          "citation_matches_gold": {},
+          "citation_status": {},
+          "faithfulness_mean": null,
+          "contradiction": 0.0,
+          "must_not_violated": 0.0,
+          "language_pt": 1.0,
+          "foreign_law": 0.0,
+          "with_other_rule_errors": 0
+        }
+      }
+    }
+  },
+  "gpt-oss-120b-rag": {
+    "overall": {
+      "n": 200,
+      "answered": 200,
+      "auto": {
+        "refused_unanswerable": 1.0,
+        "refused_answerable": 0.044,
+        "no_sources_refusals": 5,
+        "retrieval_hit": 0.872,
+        "gold_passage_recall": 0.785,
+        "verdict_accuracy": 0.841,
+        "verdict_unclear": 5,
+        "cites": 1.0,
+        "citation_resolution_match": 0.977,
+        "citation_match": 0.924,
+        "median_seconds": 6.8
+      },
+      "judge": {
+        "judged": 200,
+        "correctness_mean": 1.65,
+        "correctness_raw_mean": 1.65,
+        "correctness_capped": 0,
+        "correctness_2": 0.73,
+        "correctness_0": 0.08,
+        "key_point_coverage": 0.847,
+        "short_answer_match": 0.884,
+        "abstention_correct": 0.955,
+        "abstained_unanswerable": 1.0,
+        "abstained_answerable": 0.05,
+        "citation_matches_gold": {
+          "full": 126,
+          "partial": 33,
+          "none": 21
+        },
+        "citation_status": {
+          "supported": 291,
+          "misattributed": 8,
+          "unverifiable": 1
+        },
+        "faithfulness_mean": 1.942,
+        "contradiction": 0.035,
+        "must_not_violated": 0.045,
+        "language_pt": 1.0,
+        "foreign_law": 0.0,
+        "with_other_rule_errors": 0
+      }
+    },
+    "by_answerable": {
+      "no": {
+        "n": 20,
+        "answered": 20,
+        "auto": {
+          "refused_unanswerable": 1.0,
+          "refused_answerable": null,
+          "no_sources_refusals": 5,
+          "retrieval_hit": null,
+          "gold_passage_recall": null,
+          "verdict_accuracy": null,
+          "verdict_unclear": 0,
+          "cites": null,
+          "citation_resolution_match": null,
+          "citation_match": null,
+          "median_seconds": 6.1
+        },
+        "judge": {
+          "judged": 20,
+          "correctness_mean": 2.0,
+          "correctness_raw_mean": 2.0,
+          "correctness_capped": 0,
+          "correctness_2": 1.0,
+          "correctness_0": 0.0,
+          "key_point_coverage": null,
+          "short_answer_match": null,
+          "abstention_correct": 1.0,
+          "abstained_unanswerable": 1.0,
+          "abstained_answerable": null,
+          "citation_matches_gold": {},
+          "citation_status": {
+            "supported": 7,
+            "misattributed": 2
+          },
+          "faithfulness_mean": null,
+          "contradiction": 0.0,
+          "must_not_violated": 0.0,
+          "language_pt": 1.0,
+          "foreign_law": 0.0,
+          "with_other_rule_errors": 0
+        }
+      },
+      "yes": {
+        "n": 180,
+        "answered": 180,
+        "auto": {
+          "refused_unanswerable": null,
+          "refused_answerable": 0.044,
+          "no_sources_refusals": 0,
+          "retrieval_hit": 0.872,
+          "gold_passage_recall": 0.785,
+          "verdict_accuracy": 0.841,
+          "verdict_unclear": 5,
+          "cites": 1.0,
+          "citation_resolution_match": 0.977,
+          "citation_match": 0.924,
+          "median_seconds": 6.8
+        },
+        "judge": {
+          "judged": 180,
+          "correctness_mean": 1.611,
+          "correctness_raw_mean": 1.611,
+          "correctness_capped": 0,
+          "correctness_2": 0.7,
+          "correctness_0": 0.089,
+          "key_point_coverage": 0.847,
+          "short_answer_match": 0.884,
+          "abstention_correct": 0.95,
+          "abstained_unanswerable": null,
+          "abstained_answerable": 0.05,
+          "citation_matches_gold": {
+            "full": 126,
+            "partial": 33,
+            "none": 21
+          },
+          "citation_status": {
+            "supported": 284,
+            "misattributed": 6,
+            "unverifiable": 1
+          },
+          "faithfulness_mean": 1.942,
+          "contradiction": 0.039,
+          "must_not_violated": 0.05,
+          "language_pt": 1.0,
+          "foreign_law": 0.0,
+          "with_other_rule_errors": 0
+        }
+      }
+    },
+    "by_question_type": {
+      "binary": {
+        "n": 82,
+        "answered": 82,
+        "auto": {
+          "refused_unanswerable": null,
+          "refused_answerable": 0.049,
+          "no_sources_refusals": 0,
+          "retrieval_hit": 0.829,
+          "gold_passage_recall": 0.724,
+          "verdict_accuracy": 0.841,
+          "verdict_unclear": 5,
+          "cites": 1.0,
+          "citation_resolution_match": 0.974,
+          "citation_match": 0.897,
+          "median_seconds": 6.4
+        },
+        "judge": {
+          "judged": 82,
+          "correctness_mean": 1.537,
+          "correctness_raw_mean": 1.537,
+          "correctness_capped": 0,
+          "correctness_2": 0.634,
+          "correctness_0": 0.098,
+          "key_point_coverage": 0.791,
+          "short_answer_match": 0.89,
+          "abstention_correct": 0.939,
+          "abstained_unanswerable": null,
+          "abstained_answerable": 0.061,
+          "citation_matches_gold": {
+            "full": 52,
+            "partial": 18,
+            "none": 12
+          },
+          "citation_status": {
+            "supported": 127,
+            "unverifiable": 1,
+            "misattributed": 1
+          },
+          "faithfulness_mean": 1.961,
+          "contradiction": 0.024,
+          "must_not_violated": 0.037,
+          "language_pt": 1.0,
+          "foreign_law": 0.0,
+          "with_other_rule_errors": 0
+        }
+      },
+      "explanatory": {
+        "n": 32,
+        "answered": 32,
+        "auto": {
+          "refused_unanswerable": null,
+          "refused_answerable": 0.031,
+          "no_sources_refusals": 0,
+          "retrieval_hit": 0.906,
+          "gold_passage_recall": 0.773,
+          "verdict_accuracy": null,
+          "verdict_unclear": 0,
+          "cites": 1.0,
+          "citation_resolution_match": 0.968,
+          "citation_match": 0.935,
+          "median_seconds": 7.5
+        },
+        "judge": {
+          "judged": 32,
+          "correctness_mean": 1.594,
+          "correctness_raw_mean": 1.594,
+          "correctness_capped": 0,
+          "correctness_2": 0.656,
+          "correctness_0": 0.062,
+          "key_point_coverage": 0.835,
+          "short_answer_match": null,
+          "abstention_correct": 0.969,
+          "abstained_unanswerable": null,
+          "abstained_answerable": 0.031,
+          "citation_matches_gold": {
+            "partial": 9,
+            "full": 20,
+            "none": 3
+          },
+          "citation_status": {
+            "supported": 72,
+            "misattributed": 1
+          },
+          "faithfulness_mean": 1.968,
+          "contradiction": 0.031,
+          "must_not_violated": 0.062,
+          "language_pt": 1.0,
+          "foreign_law": 0.0,
+          "with_other_rule_errors": 0
+        }
+      },
+      "factual": {
+        "n": 30,
+        "answered": 30,
+        "auto": {
+          "refused_unanswerable": null,
+          "refused_answerable": 0.1,
+          "no_sources_refusals": 0,
+          "retrieval_hit": 0.867,
+          "gold_passage_recall": 0.839,
+          "verdict_accuracy": null,
+          "verdict_unclear": 0,
+          "cites": 1.0,
+          "citation_resolution_match": 1.0,
+          "citation_match": 0.963,
+          "median_seconds": 6.5
+        },
+        "judge": {
+          "judged": 30,
+          "correctness_mean": 1.667,
+          "correctness_raw_mean": 1.667,
+          "correctness_capped": 0,
+          "correctness_2": 0.8,
+          "correctness_0": 0.133,
+          "key_point_coverage": 0.856,
+          "short_answer_match": 0.867,
+          "abstention_correct": 0.9,
+          "abstained_unanswerable": null,
+          "abstained_answerable": 0.1,
+          "citation_matches_gold": {
+            "full": 24,
+            "none": 4,
+            "partial": 2
+          },
+          "citation_status": {
+            "supported": 34,
+            "misattributed": 2
+          },
+          "faithfulness_mean": 1.926,
+          "contradiction": 0.033,
+          "must_not_violated": 0.033,
+          "language_pt": 1.0,
+          "foreign_law": 0.0,
+          "with_other_rule_errors": 0
+        }
+      },
+      "list": {
+        "n": 36,
+        "answered": 36,
+        "auto": {
+          "refused_unanswerable": null,
+          "refused_answerable": 0.0,
+          "no_sources_refusals": 0,
+          "retrieval_hit": 0.944,
+          "gold_passage_recall": 0.889,
+          "verdict_accuracy": null,
+          "verdict_unclear": 0,
+          "cites": 1.0,
+          "citation_resolution_match": 0.972,
+          "citation_match": 0.944,
+          "median_seconds": 7.3
+        },
+        "judge": {
+          "judged": 36,
+          "correctness_mean": 1.75,
+          "correctness_raw_mean": 1.75,
+          "correctness_capped": 0,
+          "correctness_2": 0.806,
+          "correctness_0": 0.056,
+          "key_point_coverage": 0.936,
+          "short_answer_match": null,
+          "abstention_correct": 1.0,
+          "abstained_unanswerable": null,
+          "abstained_answerable": 0.0,
+          "citation_matches_gold": {
+            "partial": 4,
+            "full": 30,
+            "none": 2
+          },
+          "citation_status": {
+            "supported": 51,
+            "misattributed": 2
+          },
+          "faithfulness_mean": 1.889,
+          "contradiction": 0.083,
+          "must_not_violated": 0.083,
+          "language_pt": 1.0,
+          "foreign_law": 0.0,
+          "with_other_rule_errors": 0
+        }
+      }
+    },
+    "by_source_document": {
+      "cfm_res_1805_2006": {
+        "n": 8,
+        "answered": 8,
+        "auto": {
+          "refused_unanswerable": null,
+          "refused_answerable": 0.0,
+          "no_sources_refusals": 0,
+          "retrieval_hit": 0.875,
+          "gold_passage_recall": 0.708,
+          "verdict_accuracy": 0.75,
+          "verdict_unclear": 0,
+          "cites": 1.0,
+          "citation_resolution_match": 1.0,
+          "citation_match": 0.875,
+          "median_seconds": 6.3
+        },
+        "judge": {
+          "judged": 8,
+          "correctness_mean": 1.625,
+          "correctness_raw_mean": 1.625,
+          "correctness_capped": 0,
+          "correctness_2": 0.625,
+          "correctness_0": 0.0,
+          "key_point_coverage": 0.826,
+          "short_answer_match": 1.0,
+          "abstention_correct": 1.0,
+          "abstained_unanswerable": null,
+          "abstained_answerable": 0.0,
+          "citation_matches_gold": {
+            "partial": 3,
+            "full": 4,
+            "none": 1
+          },
+          "citation_status": {
+            "supported": 17
+          },
+          "faithfulness_mean": 2.0,
+          "contradiction": 0.0,
+          "must_not_violated": 0.0,
+          "language_pt": 1.0,
+          "foreign_law": 0.0,
+          "with_other_rule_errors": 0
+        }
+      },
+      "cfm_res_1821_2007": {
+        "n": 14,
+        "answered": 14,
+        "auto": {
+          "refused_unanswerable": null,
+          "refused_answerable": 0.0,
+          "no_sources_refusals": 0,
+          "retrieval_hit": 1.0,
+          "gold_passage_recall": 0.814,
+          "verdict_accuracy": 0.833,
+          "verdict_unclear": 0,
+          "cites": 1.0,
+          "citation_resolution_match": 1.0,
+          "citation_match": 1.0,
+          "median_seconds": 6.6
+        },
+        "judge": {
+          "judged": 14,
+          "correctness_mean": 1.714,
+          "correctness_raw_mean": 1.714,
+          "correctness_capped": 0,
+          "correctness_2": 0.714,
+          "correctness_0": 0.0,
+          "key_point_coverage": 0.829,
+          "short_answer_match": 0.889,
+          "abstention_correct": 1.0,
+          "abstained_unanswerable": null,
+          "abstained_answerable": 0.0,
+          "citation_matches_gold": {
+            "full": 9,
+            "partial": 5
+          },
+          "citation_status": {
+            "supported": 25
+          },
+          "faithfulness_mean": 2.0,
+          "contradiction": 0.0,
+          "must_not_violated": 0.0,
+          "language_pt": 1.0,
+          "foreign_law": 0.0,
+          "with_other_rule_errors": 0
+        }
+      },
+      "cfm_res_1995_2012": {
+        "n": 8,
+        "answered": 8,
+        "auto": {
+          "refused_unanswerable": null,
+          "refused_answerable": 0.125,
+          "no_sources_refusals": 0,
+          "retrieval_hit": 0.875,
+          "gold_passage_recall": 0.875,
+          "verdict_accuracy": 1.0,
+          "verdict_unclear": 0,
+          "cites": 1.0,
+          "citation_resolution_match": 1.0,
+          "citation_match": 1.0,
+          "median_seconds": 7.9
+        },
+        "judge": {
+          "judged": 8,
+          "correctness_mean": 1.75,
+          "correctness_raw_mean": 1.75,
+          "correctness_capped": 0,
+          "correctness_2": 0.875,
+          "correctness_0": 0.125,
+          "key_point_coverage": 0.941,
+          "short_answer_match": 0.8,
+          "abstention_correct": 0.875,
+          "abstained_unanswerable": null,
+          "abstained_answerable": 0.125,
+          "citation_matches_gold": {
+            "full": 7,
+            "none": 1
+          },
+          "citation_status": {
+            "supported": 8,
+            "misattributed": 1
+          },
+          "faithfulness_mean": 1.857,
+          "contradiction": 0.0,
+          "must_not_violated": 0.0,
+          "language_pt": 1.0,
+          "foreign_law": 0.0,
+          "with_other_rule_errors": 0
+        }
+      },
+      "cfm_res_1999_2012": {
+        "n": 13,
+        "answered": 13,
+        "auto": {
+          "refused_unanswerable": null,
+          "refused_answerable": 0.077,
+          "no_sources_refusals": 0,
+          "retrieval_hit": 0.846,
+          "gold_passage_recall": 0.705,
+          "verdict_accuracy": 0.714,
+          "verdict_unclear": 1,
+          "cites": 1.0,
+          "citation_resolution_match": 1.0,
+          "citation_match": 0.917,
+          "median_seconds": 8.3
+        },
+        "judge": {
+          "judged": 13,
+          "correctness_mean": 1.231,
+          "correctness_raw_mean": 1.231,
+          "correctness_capped": 0,
+          "correctness_2": 0.385,
+          "correctness_0": 0.154,
+          "key_point_coverage": 0.771,
+          "short_answer_match": 0.875,
+          "abstention_correct": 0.923,
+          "abstained_unanswerable": null,
+          "abstained_answerable": 0.077,
+          "citation_matches_gold": {
+            "full": 7,
+            "none": 2,
+            "partial": 4
+          },
+          "citation_status": {
+            "supported": 22,
+            "misattributed": 2
+          },
+          "faithfulness_mean": 1.75,
+          "contradiction": 0.154,
+          "must_not_violated": 0.154,
+          "language_pt": 1.0,
+          "foreign_law": 0.0,
+          "with_other_rule_errors": 0
+        }
+      },
+      "cfm_res_2004_2012": {
+        "n": 10,
+        "answered": 10,
+        "auto": {
+          "refused_unanswerable": null,
+          "refused_answerable": 0.0,
+          "no_sources_refusals": 0,
+          "retrieval_hit": 1.0,
+          "gold_passage_recall": 1.0,
+          "verdict_accuracy": 1.0,
+          "verdict_unclear": 0,
+          "cites": 1.0,
+          "citation_resolution_match": 1.0,
+          "citation_match": 1.0,
+          "median_seconds": 7.6
+        },
+        "judge": {
+          "judged": 10,
+          "correctness_mean": 2.0,
+          "correctness_raw_mean": 2.0,
+          "correctness_capped": 0,
+          "correctness_2": 1.0,
+          "correctness_0": 0.0,
+          "key_point_coverage": 1.0,
+          "short_answer_match": 1.0,
+          "abstention_correct": 1.0,
+          "abstained_unanswerable": null,
+          "abstained_answerable": 0.0,
+          "citation_matches_gold": {
+            "full": 10
+          },
+          "citation_status": {
+            "supported": 14
+          },
+          "faithfulness_mean": 2.0,
+          "contradiction": 0.0,
+          "must_not_violated": 0.0,
+          "language_pt": 1.0,
+          "foreign_law": 0.0,
+          "with_other_rule_errors": 0
+        }
+      },
+      "cfm_res_2217_2018": {
+        "n": 57,
+        "answered": 57,
+        "auto": {
+          "refused_unanswerable": null,
+          "refused_answerable": 0.07,
+          "no_sources_refusals": 0,
+          "retrieval_hit": 0.877,
+          "gold_passage_recall": 0.822,
+          "verdict_accuracy": 0.8,
+          "verdict_unclear": 3,
+          "cites": 1.0,
+          "citation_resolution_match": 0.981,
+          "citation_match": 0.943,
+          "median_seconds": 6.4
+        },
+        "judge": {
+          "judged": 57,
+          "correctness_mean": 1.719,
+          "correctness_raw_mean": 1.719,
+          "correctness_capped": 0,
+          "correctness_2": 0.825,
+          "correctness_0": 0.105,
+          "key_point_coverage": 0.886,
+          "short_answer_match": 0.875,
+          "abstention_correct": 0.93,
+          "abstained_unanswerable": null,
+          "abstained_answerable": 0.07,
+          "citation_matches_gold": {
+            "full": 45,
+            "partial": 5,
+            "none": 7
+          },
+          "citation_status": {
+            "supported": 79
+          },
+          "faithfulness_mean": 1.981,
+          "contradiction": 0.018,
+          "must_not_violated": 0.018,
+          "language_pt": 1.0,
+          "foreign_law": 0.0,
+          "with_other_rule_errors": 0
+        }
+      },
+      "cfm_res_2232_2019": {
+        "n": 11,
+        "answered": 11,
+        "auto": {
+          "refused_unanswerable": null,
+          "refused_answerable": 0.0,
+          "no_sources_refusals": 0,
+          "retrieval_hit": 1.0,
+          "gold_passage_recall": 0.788,
+          "verdict_accuracy": 1.0,
+          "verdict_unclear": 0,
+          "cites": 1.0,
+          "citation_resolution_match": 1.0,
+          "citation_match": 1.0,
+          "median_seconds": 6.3
+        },
+        "judge": {
+          "judged": 11,
+          "correctness_mean": 1.545,
+          "correctness_raw_mean": 1.545,
+          "correctness_capped": 0,
+          "correctness_2": 0.545,
+          "correctness_0": 0.0,
+          "key_point_coverage": 0.77,
+          "short_answer_match": 1.0,
+          "abstention_correct": 1.0,
+          "abstained_unanswerable": null,
+          "abstained_answerable": 0.0,
+          "citation_matches_gold": {
+            "partial": 5,
+            "full": 6
+          },
+          "citation_status": {
+            "supported": 18
+          },
+          "faithfulness_mean": 2.0,
+          "contradiction": 0.0,
+          "must_not_violated": 0.0,
+          "language_pt": 1.0,
+          "foreign_law": 0.0,
+          "with_other_rule_errors": 0
+        }
+      },
+      "cfm_res_2314_2022": {
+        "n": 21,
+        "answered": 21,
+        "auto": {
+          "refused_unanswerable": null,
+          "refused_answerable": 0.048,
+          "no_sources_refusals": 0,
+          "retrieval_hit": 0.857,
+          "gold_passage_recall": 0.81,
+          "verdict_accuracy": 0.778,
+          "verdict_unclear": 0,
+          "cites": 1.0,
+          "citation_resolution_match": 0.95,
+          "citation_match": 0.9,
+          "median_seconds": 6.8
+        },
+        "judge": {
+          "judged": 21,
+          "correctness_mean": 1.524,
+          "correctness_raw_mean": 1.524,
+          "correctness_capped": 0,
+          "correctness_2": 0.714,
+          "correctness_0": 0.19,
+          "key_point_coverage": 0.879,
+          "short_answer_match": 0.769,
+          "abstention_correct": 0.905,
+          "abstained_unanswerable": null,
+          "abstained_answerable": 0.095,
+          "citation_matches_gold": {
+            "full": 16,
+            "none": 3,
+            "partial": 2
+          },
+          "citation_status": {
+            "supported": 46,
+            "unverifiable": 1,
+            "misattributed": 1
+          },
+          "faithfulness_mean": 1.947,
+          "contradiction": 0.095,
+          "must_not_violated": 0.143,
+          "language_pt": 1.0,
+          "foreign_law": 0.0,
+          "with_other_rule_errors": 0
+        }
+      },
+      "cfm_res_2327_2022": {
+        "n": 9,
+        "answered": 9,
+        "auto": {
+          "refused_unanswerable": null,
+          "refused_answerable": 0.0,
+          "no_sources_refusals": 0,
+          "retrieval_hit": 0.667,
+          "gold_passage_recall": 0.593,
+          "verdict_accuracy": 0.8,
+          "verdict_unclear": 0,
+          "cites": 1.0,
+          "citation_resolution_match": 0.778,
+          "citation_match": 0.778,
+          "median_seconds": 6.0
+        },
+        "judge": {
+          "judged": 9,
+          "correctness_mean": 1.444,
+          "correctness_raw_mean": 1.444,
+          "correctness_capped": 0,
+          "correctness_2": 0.444,
+          "correctness_0": 0.0,
+          "key_point_coverage": 0.7,
+          "short_answer_match": 0.857,
+          "abstention_correct": 1.0,
+          "abstained_unanswerable": null,
+          "abstained_answerable": 0.0,
+          "citation_matches_gold": {
+            "partial": 2,
+            "full": 5,
+            "none": 2
+          },
+          "citation_status": {
+            "supported": 14
+          },
+          "faithfulness_mean": 2.0,
+          "contradiction": 0.0,
+          "must_not_violated": 0.0,
+          "language_pt": 1.0,
+          "foreign_law": 0.0,
+          "with_other_rule_errors": 0
+        }
+      },
+      "cfm_res_2333_2023": {
+        "n": 10,
+        "answered": 10,
+        "auto": {
+          "refused_unanswerable": null,
+          "refused_answerable": 0.0,
+          "no_sources_refusals": 0,
+          "retrieval_hit": 0.8,
+          "gold_passage_recall": 0.75,
+          "verdict_accuracy": 1.0,
+          "verdict_unclear": 0,
+          "cites": 1.0,
+          "citation_resolution_match": 1.0,
+          "citation_match": 0.8,
+          "median_seconds": 7.9
+        },
+        "judge": {
+          "judged": 10,
+          "correctness_mean": 1.8,
+          "correctness_raw_mean": 1.8,
+          "correctness_capped": 0,
+          "correctness_2": 0.8,
+          "correctness_0": 0.0,
+          "key_point_coverage": 0.929,
+          "short_answer_match": 1.0,
+          "abstention_correct": 1.0,
+          "abstained_unanswerable": null,
+          "abstained_answerable": 0.0,
+          "citation_matches_gold": {
+            "none": 2,
+            "partial": 1,
+            "full": 7
+          },
+          "citation_status": {
+            "supported": 19
+          },
+          "faithfulness_mean": 2.0,
+          "contradiction": 0.0,
+          "must_not_violated": 0.0,
+          "language_pt": 1.0,
+          "foreign_law": 0.0,
+          "with_other_rule_errors": 0
+        }
+      },
+      "cfm_res_2336_2023": {
+        "n": 19,
+        "answered": 19,
+        "auto": {
+          "refused_unanswerable": null,
+          "refused_answerable": 0.053,
+          "no_sources_refusals": 0,
+          "retrieval_hit": 0.789,
+          "gold_passage_recall": 0.667,
+          "verdict_accuracy": 0.889,
+          "verdict_unclear": 1,
+          "cites": 1.0,
+          "citation_resolution_match": 1.0,
+          "citation_match": 0.889,
+          "median_seconds": 8.7
+        },
+        "judge": {
+          "judged": 19,
+          "correctness_mean": 1.316,
+          "correctness_raw_mean": 1.316,
+          "correctness_capped": 0,
+          "correctness_2": 0.474,
+          "correctness_0": 0.158,
+          "key_point_coverage": 0.74,
+          "short_answer_match": 0.846,
+          "abstention_correct": 0.947,
+          "abstained_unanswerable": null,
+          "abstained_answerable": 0.053,
+          "citation_matches_gold": {
+            "partial": 6,
+            "full": 10,
+            "none": 3
+          },
+          "citation_status": {
+            "supported": 22,
+            "misattributed": 2
+          },
+          "faithfulness_mean": 1.778,
+          "contradiction": 0.105,
+          "must_not_violated": 0.158,
+          "language_pt": 1.0,
+          "foreign_law": 0.0,
+          "with_other_rule_errors": 0
+        }
+      }
+    },
+    "by_unanswerable_kind": {
+      "near_miss": {
+        "n": 10,
+        "answered": 10,
+        "auto": {
+          "refused_unanswerable": 1.0,
+          "refused_answerable": null,
+          "no_sources_refusals": 1,
+          "retrieval_hit": null,
+          "gold_passage_recall": null,
+          "verdict_accuracy": null,
+          "verdict_unclear": 0,
+          "cites": null,
+          "citation_resolution_match": null,
+          "citation_match": null,
+          "median_seconds": 7.0
+        },
+        "judge": {
+          "judged": 10,
+          "correctness_mean": 2.0,
+          "correctness_raw_mean": 2.0,
+          "correctness_capped": 0,
+          "correctness_2": 1.0,
+          "correctness_0": 0.0,
+          "key_point_coverage": null,
+          "short_answer_match": null,
+          "abstention_correct": 1.0,
+          "abstained_unanswerable": 1.0,
+          "abstained_answerable": null,
+          "citation_matches_gold": {},
+          "citation_status": {
+            "supported": 6
+          },
+          "faithfulness_mean": null,
+          "contradiction": 0.0,
+          "must_not_violated": 0.0,
+          "language_pt": 1.0,
+          "foreign_law": 0.0,
+          "with_other_rule_errors": 0
+        }
+      },
+      "out_of_scope": {
+        "n": 10,
+        "answered": 10,
+        "auto": {
+          "refused_unanswerable": 1.0,
+          "refused_answerable": null,
+          "no_sources_refusals": 4,
+          "retrieval_hit": null,
+          "gold_passage_recall": null,
+          "verdict_accuracy": null,
+          "verdict_unclear": 0,
+          "cites": null,
+          "citation_resolution_match": null,
+          "citation_match": null,
+          "median_seconds": 3.4
+        },
+        "judge": {
+          "judged": 10,
+          "correctness_mean": 2.0,
+          "correctness_raw_mean": 2.0,
+          "correctness_capped": 0,
+          "correctness_2": 1.0,
+          "correctness_0": 0.0,
+          "key_point_coverage": null,
+          "short_answer_match": null,
+          "abstention_correct": 1.0,
+          "abstained_unanswerable": 1.0,
+          "abstained_answerable": null,
+          "citation_matches_gold": {},
+          "citation_status": {
+            "supported": 1,
+            "misattributed": 2
+          },
+          "faithfulness_mean": null,
+          "contradiction": 0.0,
+          "must_not_violated": 0.0,
+          "language_pt": 1.0,
+          "foreign_law": 0.0,
+          "with_other_rule_errors": 0
+        }
+      }
+    }
+  },
+  "qwen3-4b-rag": {
+    "overall": {
+      "n": 194,
+      "answered": 194,
+      "auto": {
+        "refused_unanswerable": 0.55,
+        "refused_answerable": 0.006,
+        "no_sources_refusals": 5,
+        "retrieval_hit": 0.868,
+        "gold_passage_recall": 0.793,
+        "verdict_accuracy": 0.5,
+        "verdict_unclear": 35,
+        "cites": 1.0,
+        "citation_resolution_match": 0.971,
+        "citation_match": 0.838,
+        "median_seconds": 42.7
+      },
+      "judge": {
+        "judged": 194,
+        "correctness_mean": 1.588,
+        "correctness_raw_mean": 1.588,
+        "correctness_capped": 0,
+        "correctness_2": 0.675,
+        "correctness_0": 0.088,
+        "key_point_coverage": 0.824,
+        "short_answer_match": 0.909,
+        "abstention_correct": 0.974,
+        "abstained_unanswerable": 1.0,
+        "abstained_answerable": 0.029,
+        "citation_matches_gold": {
+          "full": 117,
+          "partial": 30,
+          "none": 27
+        },
+        "citation_status": {
+          "supported": 275,
+          "misattributed": 26,
+          "unverifiable": 3
+        },
+        "faithfulness_mean": 1.787,
+        "contradiction": 0.077,
+        "must_not_violated": 0.052,
+        "language_pt": 1.0,
+        "foreign_law": 0.0,
+        "with_other_rule_errors": 0
+      }
+    },
+    "by_answerable": {
+      "no": {
+        "n": 20,
+        "answered": 20,
+        "auto": {
+          "refused_unanswerable": 0.55,
+          "refused_answerable": null,
+          "no_sources_refusals": 5,
+          "retrieval_hit": null,
+          "gold_passage_recall": null,
+          "verdict_accuracy": null,
+          "verdict_unclear": 0,
+          "cites": null,
+          "citation_resolution_match": null,
+          "citation_match": null,
+          "median_seconds": 29.9
+        },
+        "judge": {
+          "judged": 20,
+          "correctness_mean": 1.9,
+          "correctness_raw_mean": 1.9,
+          "correctness_capped": 0,
+          "correctness_2": 0.9,
+          "correctness_0": 0.0,
+          "key_point_coverage": null,
+          "short_answer_match": null,
+          "abstention_correct": 1.0,
+          "abstained_unanswerable": 1.0,
+          "abstained_answerable": null,
+          "citation_matches_gold": {},
+          "citation_status": {
+            "supported": 19,
+            "unverifiable": 1
+          },
+          "faithfulness_mean": null,
+          "contradiction": 0.0,
+          "must_not_violated": 0.0,
+          "language_pt": 1.0,
+          "foreign_law": 0.0,
+          "with_other_rule_errors": 0
+        }
+      },
+      "yes": {
+        "n": 174,
+        "answered": 174,
+        "auto": {
+          "refused_unanswerable": null,
+          "refused_answerable": 0.006,
+          "no_sources_refusals": 0,
+          "retrieval_hit": 0.868,
+          "gold_passage_recall": 0.793,
+          "verdict_accuracy": 0.5,
+          "verdict_unclear": 35,
+          "cites": 1.0,
+          "citation_resolution_match": 0.971,
+          "citation_match": 0.838,
+          "median_seconds": 44.8
+        },
+        "judge": {
+          "judged": 174,
+          "correctness_mean": 1.552,
+          "correctness_raw_mean": 1.552,
+          "correctness_capped": 0,
+          "correctness_2": 0.649,
+          "correctness_0": 0.098,
+          "key_point_coverage": 0.824,
+          "short_answer_match": 0.909,
+          "abstention_correct": 0.971,
+          "abstained_unanswerable": null,
+          "abstained_answerable": 0.029,
+          "citation_matches_gold": {
+            "full": 117,
+            "partial": 30,
+            "none": 27
+          },
+          "citation_status": {
+            "supported": 256,
+            "misattributed": 26,
+            "unverifiable": 2
+          },
+          "faithfulness_mean": 1.787,
+          "contradiction": 0.086,
+          "must_not_violated": 0.057,
+          "language_pt": 1.0,
+          "foreign_law": 0.0,
+          "with_other_rule_errors": 0
+        }
+      }
+    },
+    "by_question_type": {
+      "binary": {
+        "n": 80,
+        "answered": 80,
+        "auto": {
+          "refused_unanswerable": null,
+          "refused_answerable": 0.013,
+          "no_sources_refusals": 0,
+          "retrieval_hit": 0.825,
+          "gold_passage_recall": 0.731,
+          "verdict_accuracy": 0.5,
+          "verdict_unclear": 35,
+          "cites": 1.0,
+          "citation_resolution_match": 0.975,
+          "citation_match": 0.823,
+          "median_seconds": 44.8
+        },
+        "judge": {
+          "judged": 80,
+          "correctness_mean": 1.512,
+          "correctness_raw_mean": 1.512,
+          "correctness_capped": 0,
+          "correctness_2": 0.613,
+          "correctness_0": 0.1,
+          "key_point_coverage": 0.773,
+          "short_answer_match": 0.925,
+          "abstention_correct": 0.975,
+          "abstained_unanswerable": null,
+          "abstained_answerable": 0.025,
+          "citation_matches_gold": {
+            "full": 49,
+            "partial": 17,
+            "none": 14
+          },
+          "citation_status": {
+            "supported": 114,
+            "unverifiable": 1,
+            "misattributed": 6
+          },
+          "faithfulness_mean": 1.782,
+          "contradiction": 0.1,
+          "must_not_violated": 0.05,
+          "language_pt": 1.0,
+          "foreign_law": 0.0,
+          "with_other_rule_errors": 0
+        }
+      },
+      "explanatory": {
+        "n": 30,
+        "answered": 30,
+        "auto": {
+          "refused_unanswerable": null,
+          "refused_answerable": 0.0,
+          "no_sources_refusals": 0,
+          "retrieval_hit": 0.9,
+          "gold_passage_recall": 0.794,
+          "verdict_accuracy": null,
+          "verdict_unclear": 0,
+          "cites": 1.0,
+          "citation_resolution_match": 0.967,
+          "citation_match": 0.9,
+          "median_seconds": 54.3
+        },
+        "judge": {
+          "judged": 30,
+          "correctness_mean": 1.533,
+          "correctness_raw_mean": 1.533,
+          "correctness_capped": 0,
+          "correctness_2": 0.6,
+          "correctness_0": 0.067,
+          "key_point_coverage": 0.81,
+          "short_answer_match": null,
+          "abstention_correct": 0.967,
+          "abstained_unanswerable": null,
+          "abstained_answerable": 0.033,
+          "citation_matches_gold": {
+            "partial": 7,
+            "full": 20,
+            "none": 3
+          },
+          "citation_status": {
+            "supported": 63,
+            "misattributed": 4
+          },
+          "faithfulness_mean": 1.793,
+          "contradiction": 0.067,
+          "must_not_violated": 0.067,
+          "language_pt": 1.0,
+          "foreign_law": 0.0,
+          "with_other_rule_errors": 0
+        }
+      },
+      "factual": {
+        "n": 30,
+        "answered": 30,
+        "auto": {
+          "refused_unanswerable": null,
+          "refused_answerable": 0.0,
+          "no_sources_refusals": 0,
+          "retrieval_hit": 0.867,
+          "gold_passage_recall": 0.839,
+          "verdict_accuracy": null,
+          "verdict_unclear": 0,
+          "cites": 1.0,
+          "citation_resolution_match": 0.967,
+          "citation_match": 0.767,
+          "median_seconds": 36.9
+        },
+        "judge": {
+          "judged": 30,
+          "correctness_mean": 1.6,
+          "correctness_raw_mean": 1.6,
+          "correctness_capped": 0,
+          "correctness_2": 0.733,
+          "correctness_0": 0.133,
+          "key_point_coverage": 0.837,
+          "short_answer_match": 0.867,
+          "abstention_correct": 0.933,
+          "abstained_unanswerable": null,
+          "abstained_answerable": 0.067,
+          "citation_matches_gold": {
+            "full": 21,
+            "none": 6,
+            "partial": 3
+          },
+          "citation_status": {
+            "supported": 36,
+            "misattributed": 5
+          },
+          "faithfulness_mean": 1.786,
+          "contradiction": 0.067,
+          "must_not_violated": 0.033,
+          "language_pt": 1.0,
+          "foreign_law": 0.0,
+          "with_other_rule_errors": 0
+        }
+      },
+      "list": {
+        "n": 34,
+        "answered": 34,
+        "auto": {
+          "refused_unanswerable": null,
+          "refused_answerable": 0.0,
+          "no_sources_refusals": 0,
+          "retrieval_hit": 0.941,
+          "gold_passage_recall": 0.897,
+          "verdict_accuracy": null,
+          "verdict_unclear": 0,
+          "cites": 1.0,
+          "citation_resolution_match": 0.971,
+          "citation_match": 0.882,
+          "median_seconds": 46.2
+        },
+        "judge": {
+          "judged": 34,
+          "correctness_mean": 1.618,
+          "correctness_raw_mean": 1.618,
+          "correctness_capped": 0,
+          "correctness_2": 0.706,
+          "correctness_0": 0.088,
+          "key_point_coverage": 0.907,
+          "short_answer_match": null,
+          "abstention_correct": 1.0,
+          "abstained_unanswerable": null,
+          "abstained_answerable": 0.0,
+          "citation_matches_gold": {
+            "partial": 3,
+            "full": 27,
+            "none": 4
+          },
+          "citation_status": {
+            "supported": 43,
+            "misattributed": 11,
+            "unverifiable": 1
+          },
+          "faithfulness_mean": 1.794,
+          "contradiction": 0.088,
+          "must_not_violated": 0.088,
+          "language_pt": 1.0,
+          "foreign_law": 0.0,
+          "with_other_rule_errors": 0
+        }
+      }
+    },
+    "by_source_document": {
+      "cfm_res_1805_2006": {
+        "n": 7,
+        "answered": 7,
+        "auto": {
+          "refused_unanswerable": null,
+          "refused_answerable": 0.0,
+          "no_sources_refusals": 0,
+          "retrieval_hit": 0.857,
+          "gold_passage_recall": 0.738,
+          "verdict_accuracy": 0.667,
+          "verdict_unclear": 1,
+          "cites": 1.0,
+          "citation_resolution_match": 1.0,
+          "citation_match": 0.857,
+          "median_seconds": 55.0
+        },
+        "judge": {
+          "judged": 7,
+          "correctness_mean": 1.571,
+          "correctness_raw_mean": 1.571,
+          "correctness_capped": 0,
+          "correctness_2": 0.571,
+          "correctness_0": 0.0,
+          "key_point_coverage": 0.816,
+          "short_answer_match": 1.0,
+          "abstention_correct": 1.0,
+          "abstained_unanswerable": null,
+          "abstained_answerable": 0.0,
+          "citation_matches_gold": {
+            "partial": 2,
+            "full": 4,
+            "none": 1
+          },
+          "citation_status": {
+            "supported": 15,
+            "misattributed": 4
+          },
+          "faithfulness_mean": 1.714,
+          "contradiction": 0.0,
+          "must_not_violated": 0.0,
+          "language_pt": 1.0,
+          "foreign_law": 0.0,
+          "with_other_rule_errors": 0
+        }
+      },
+      "cfm_res_1821_2007": {
+        "n": 13,
+        "answered": 13,
+        "auto": {
+          "refused_unanswerable": null,
+          "refused_answerable": 0.0,
+          "no_sources_refusals": 0,
+          "retrieval_hit": 1.0,
+          "gold_passage_recall": 0.846,
+          "verdict_accuracy": 0.5,
+          "verdict_unclear": 2,
+          "cites": 1.0,
+          "citation_resolution_match": 1.0,
+          "citation_match": 0.923,
+          "median_seconds": 44.1
+        },
+        "judge": {
+          "judged": 13,
+          "correctness_mean": 1.615,
+          "correctness_raw_mean": 1.615,
+          "correctness_capped": 0,
+          "correctness_2": 0.615,
+          "correctness_0": 0.0,
+          "key_point_coverage": 0.781,
+          "short_answer_match": 0.889,
+          "abstention_correct": 1.0,
+          "abstained_unanswerable": null,
+          "abstained_answerable": 0.0,
+          "citation_matches_gold": {
+            "full": 8,
+            "partial": 4,
+            "none": 1
+          },
+          "citation_status": {
+            "supported": 17,
+            "misattributed": 2
+          },
+          "faithfulness_mean": 1.923,
+          "contradiction": 0.077,
+          "must_not_violated": 0.077,
+          "language_pt": 1.0,
+          "foreign_law": 0.0,
+          "with_other_rule_errors": 0
+        }
+      },
+      "cfm_res_1995_2012": {
+        "n": 8,
+        "answered": 8,
+        "auto": {
+          "refused_unanswerable": null,
+          "refused_answerable": 0.0,
+          "no_sources_refusals": 0,
+          "retrieval_hit": 0.875,
+          "gold_passage_recall": 0.875,
+          "verdict_accuracy": 0.5,
+          "verdict_unclear": 2,
+          "cites": 1.0,
+          "citation_resolution_match": 0.875,
+          "citation_match": 0.75,
+          "median_seconds": 49.8
+        },
+        "judge": {
+          "judged": 8,
+          "correctness_mean": 1.625,
+          "correctness_raw_mean": 1.625,
+          "correctness_capped": 0,
+          "correctness_2": 0.75,
+          "correctness_0": 0.125,
+          "key_point_coverage": 0.912,
+          "short_answer_match": 0.8,
+          "abstention_correct": 0.875,
+          "abstained_unanswerable": null,
+          "abstained_answerable": 0.125,
+          "citation_matches_gold": {
+            "full": 6,
+            "none": 2
+          },
+          "citation_status": {
+            "supported": 10,
+            "unverifiable": 1
+          },
+          "faithfulness_mean": 2.0,
+          "contradiction": 0.0,
+          "must_not_violated": 0.0,
+          "language_pt": 1.0,
+          "foreign_law": 0.0,
+          "with_other_rule_errors": 0
+        }
+      },
+      "cfm_res_1999_2012": {
+        "n": 13,
+        "answered": 13,
+        "auto": {
+          "refused_unanswerable": null,
+          "refused_answerable": 0.0,
+          "no_sources_refusals": 0,
+          "retrieval_hit": 0.846,
+          "gold_passage_recall": 0.705,
+          "verdict_accuracy": 0.429,
+          "verdict_unclear": 4,
+          "cites": 1.0,
+          "citation_resolution_match": 0.923,
+          "citation_match": 0.769,
+          "median_seconds": 45.9
+        },
+        "judge": {
+          "judged": 13,
+          "correctness_mean": 1.538,
+          "correctness_raw_mean": 1.538,
+          "correctness_capped": 0,
+          "correctness_2": 0.615,
+          "correctness_0": 0.077,
+          "key_point_coverage": 0.857,
+          "short_answer_match": 1.0,
+          "abstention_correct": 1.0,
+          "abstained_unanswerable": null,
+          "abstained_answerable": 0.0,
+          "citation_matches_gold": {
+            "full": 6,
+            "none": 3,
+            "partial": 4
+          },
+          "citation_status": {
+            "supported": 20,
+            "misattributed": 1
+          },
+          "faithfulness_mean": 1.846,
+          "contradiction": 0.077,
+          "must_not_violated": 0.154,
+          "language_pt": 1.0,
+          "foreign_law": 0.0,
+          "with_other_rule_errors": 0
+        }
+      },
+      "cfm_res_2004_2012": {
+        "n": 10,
+        "answered": 10,
+        "auto": {
+          "refused_unanswerable": null,
+          "refused_answerable": 0.0,
+          "no_sources_refusals": 0,
+          "retrieval_hit": 1.0,
+          "gold_passage_recall": 1.0,
+          "verdict_accuracy": 0.75,
+          "verdict_unclear": 1,
+          "cites": 1.0,
+          "citation_resolution_match": 1.0,
+          "citation_match": 1.0,
+          "median_seconds": 38.6
+        },
+        "judge": {
+          "judged": 10,
+          "correctness_mean": 2.0,
+          "correctness_raw_mean": 2.0,
+          "correctness_capped": 0,
+          "correctness_2": 1.0,
+          "correctness_0": 0.0,
+          "key_point_coverage": 1.0,
+          "short_answer_match": 1.0,
+          "abstention_correct": 1.0,
+          "abstained_unanswerable": null,
+          "abstained_answerable": 0.0,
+          "citation_matches_gold": {
+            "full": 10
+          },
+          "citation_status": {
+            "supported": 15
+          },
+          "faithfulness_mean": 2.0,
+          "contradiction": 0.0,
+          "must_not_violated": 0.0,
+          "language_pt": 1.0,
+          "foreign_law": 0.0,
+          "with_other_rule_errors": 0
+        }
+      },
+      "cfm_res_2217_2018": {
+        "n": 56,
+        "answered": 56,
+        "auto": {
+          "refused_unanswerable": null,
+          "refused_answerable": 0.0,
+          "no_sources_refusals": 0,
+          "retrieval_hit": 0.875,
+          "gold_passage_recall": 0.827,
+          "verdict_accuracy": 0.36,
+          "verdict_unclear": 15,
+          "cites": 1.0,
+          "citation_resolution_match": 1.0,
+          "citation_match": 0.857,
+          "median_seconds": 46.8
+        },
+        "judge": {
+          "judged": 56,
+          "correctness_mean": 1.571,
+          "correctness_raw_mean": 1.571,
+          "correctness_capped": 0,
+          "correctness_2": 0.732,
+          "correctness_0": 0.161,
+          "key_point_coverage": 0.848,
+          "short_answer_match": 0.906,
+          "abstention_correct": 0.946,
+          "abstained_unanswerable": null,
+          "abstained_answerable": 0.054,
+          "citation_matches_gold": {
+            "full": 42,
+            "partial": 6,
+            "none": 8
+          },
+          "citation_status": {
+            "supported": 76,
+            "misattributed": 6
+          },
+          "faithfulness_mean": 1.736,
+          "contradiction": 0.125,
+          "must_not_violated": 0.036,
+          "language_pt": 1.0,
+          "foreign_law": 0.0,
+          "with_other_rule_errors": 0
+        }
+      },
+      "cfm_res_2232_2019": {
+        "n": 11,
+        "answered": 11,
+        "auto": {
+          "refused_unanswerable": null,
+          "refused_answerable": 0.0,
+          "no_sources_refusals": 0,
+          "retrieval_hit": 1.0,
+          "gold_passage_recall": 0.788,
+          "verdict_accuracy": 0.8,
+          "verdict_unclear": 1,
+          "cites": 1.0,
+          "citation_resolution_match": 1.0,
+          "citation_match": 1.0,
+          "median_seconds": 41.9
+        },
+        "judge": {
+          "judged": 11,
+          "correctness_mean": 1.545,
+          "correctness_raw_mean": 1.545,
+          "correctness_capped": 0,
+          "correctness_2": 0.545,
+          "correctness_0": 0.0,
+          "key_point_coverage": 0.743,
+          "short_answer_match": 1.0,
+          "abstention_correct": 1.0,
+          "abstained_unanswerable": null,
+          "abstained_answerable": 0.0,
+          "citation_matches_gold": {
+            "partial": 4,
+            "full": 7
+          },
+          "citation_status": {
+            "supported": 16
+          },
+          "faithfulness_mean": 2.0,
+          "contradiction": 0.0,
+          "must_not_violated": 0.0,
+          "language_pt": 1.0,
+          "foreign_law": 0.0,
+          "with_other_rule_errors": 0
+        }
+      },
+      "cfm_res_2314_2022": {
+        "n": 21,
+        "answered": 21,
+        "auto": {
+          "refused_unanswerable": null,
+          "refused_answerable": 0.048,
+          "no_sources_refusals": 0,
+          "retrieval_hit": 0.857,
+          "gold_passage_recall": 0.81,
+          "verdict_accuracy": 0.333,
+          "verdict_unclear": 3,
+          "cites": 1.0,
+          "citation_resolution_match": 0.95,
+          "citation_match": 0.75,
+          "median_seconds": 50.1
+        },
+        "judge": {
+          "judged": 21,
+          "correctness_mean": 1.381,
+          "correctness_raw_mean": 1.381,
+          "correctness_capped": 0,
+          "correctness_2": 0.571,
+          "correctness_0": 0.19,
+          "key_point_coverage": 0.78,
+          "short_answer_match": 0.692,
+          "abstention_correct": 0.952,
+          "abstained_unanswerable": null,
+          "abstained_answerable": 0.048,
+          "citation_matches_gold": {
+            "full": 14,
+            "none": 5,
+            "partial": 2
+          },
+          "citation_status": {
+            "supported": 35,
+            "misattributed": 8
+          },
+          "faithfulness_mean": 1.5,
+          "contradiction": 0.19,
+          "must_not_violated": 0.143,
+          "language_pt": 1.0,
+          "foreign_law": 0.0,
+          "with_other_rule_errors": 0
+        }
+      },
+      "cfm_res_2327_2022": {
+        "n": 8,
+        "answered": 8,
+        "auto": {
+          "refused_unanswerable": null,
+          "refused_answerable": 0.0,
+          "no_sources_refusals": 0,
+          "retrieval_hit": 0.625,
+          "gold_passage_recall": 0.625,
+          "verdict_accuracy": 0.75,
+          "verdict_unclear": 1,
+          "cites": 1.0,
+          "citation_resolution_match": 0.75,
+          "citation_match": 0.75,
+          "median_seconds": 37.0
+        },
+        "judge": {
+          "judged": 8,
+          "correctness_mean": 1.5,
+          "correctness_raw_mean": 1.5,
+          "correctness_capped": 0,
+          "correctness_2": 0.5,
+          "correctness_0": 0.0,
+          "key_point_coverage": 0.735,
+          "short_answer_match": 1.0,
+          "abstention_correct": 1.0,
+          "abstained_unanswerable": null,
+          "abstained_answerable": 0.0,
+          "citation_matches_gold": {
+            "partial": 1,
+            "full": 5,
+            "none": 2
+          },
+          "citation_status": {
+            "supported": 11
+          },
+          "faithfulness_mean": 2.0,
+          "contradiction": 0.0,
+          "must_not_violated": 0.125,
+          "language_pt": 1.0,
+          "foreign_law": 0.0,
+          "with_other_rule_errors": 0
+        }
+      },
+      "cfm_res_2333_2023": {
+        "n": 10,
+        "answered": 10,
+        "auto": {
+          "refused_unanswerable": null,
+          "refused_answerable": 0.0,
+          "no_sources_refusals": 0,
+          "retrieval_hit": 0.8,
+          "gold_passage_recall": 0.75,
+          "verdict_accuracy": 0.25,
+          "verdict_unclear": 3,
+          "cites": 1.0,
+          "citation_resolution_match": 1.0,
+          "citation_match": 0.7,
+          "median_seconds": 37.4
+        },
+        "judge": {
+          "judged": 10,
+          "correctness_mean": 1.5,
+          "correctness_raw_mean": 1.5,
+          "correctness_capped": 0,
+          "correctness_2": 0.6,
+          "correctness_0": 0.1,
+          "key_point_coverage": 0.881,
+          "short_answer_match": 1.0,
+          "abstention_correct": 1.0,
+          "abstained_unanswerable": null,
+          "abstained_answerable": 0.0,
+          "citation_matches_gold": {
+            "none": 2,
+            "partial": 2,
+            "full": 6
+          },
+          "citation_status": {
+            "supported": 20,
+            "misattributed": 3
+          },
+          "faithfulness_mean": 2.0,
+          "contradiction": 0.1,
+          "must_not_violated": 0.1,
+          "language_pt": 1.0,
+          "foreign_law": 0.0,
+          "with_other_rule_errors": 0
+        }
+      },
+      "cfm_res_2336_2023": {
+        "n": 17,
+        "answered": 17,
+        "auto": {
+          "refused_unanswerable": null,
+          "refused_answerable": 0.0,
+          "no_sources_refusals": 0,
+          "retrieval_hit": 0.765,
+          "gold_passage_recall": 0.657,
+          "verdict_accuracy": 0.778,
+          "verdict_unclear": 2,
+          "cites": 1.0,
+          "citation_resolution_match": 1.0,
+          "citation_match": 0.824,
+          "median_seconds": 49.7
+        },
+        "judge": {
+          "judged": 17,
+          "correctness_mean": 1.412,
+          "correctness_raw_mean": 1.412,
+          "correctness_capped": 0,
+          "correctness_2": 0.471,
+          "correctness_0": 0.059,
+          "key_point_coverage": 0.761,
+          "short_answer_match": 0.923,
+          "abstention_correct": 1.0,
+          "abstained_unanswerable": null,
+          "abstained_answerable": 0.0,
+          "citation_matches_gold": {
+            "partial": 5,
+            "full": 9,
+            "none": 3
+          },
+          "citation_status": {
+            "supported": 21,
+            "unverifiable": 1,
+            "misattributed": 2
+          },
+          "faithfulness_mean": 1.588,
+          "contradiction": 0.059,
+          "must_not_violated": 0.0,
+          "language_pt": 1.0,
+          "foreign_law": 0.0,
+          "with_other_rule_errors": 0
+        }
+      }
+    },
+    "by_unanswerable_kind": {
+      "near_miss": {
+        "n": 10,
+        "answered": 10,
+        "auto": {
+          "refused_unanswerable": 0.3,
+          "refused_answerable": null,
+          "no_sources_refusals": 1,
+          "retrieval_hit": null,
+          "gold_passage_recall": null,
+          "verdict_accuracy": null,
+          "verdict_unclear": 0,
+          "cites": null,
+          "citation_resolution_match": null,
+          "citation_match": null,
+          "median_seconds": 33.2
+        },
+        "judge": {
+          "judged": 10,
+          "correctness_mean": 1.9,
+          "correctness_raw_mean": 1.9,
+          "correctness_capped": 0,
+          "correctness_2": 0.9,
+          "correctness_0": 0.0,
+          "key_point_coverage": null,
+          "short_answer_match": null,
+          "abstention_correct": 1.0,
+          "abstained_unanswerable": 1.0,
+          "abstained_answerable": null,
+          "citation_matches_gold": {},
+          "citation_status": {
+            "supported": 15,
+            "unverifiable": 1
+          },
+          "faithfulness_mean": null,
+          "contradiction": 0.0,
+          "must_not_violated": 0.0,
+          "language_pt": 1.0,
+          "foreign_law": 0.0,
+          "with_other_rule_errors": 0
+        }
+      },
+      "out_of_scope": {
+        "n": 10,
+        "answered": 10,
+        "auto": {
+          "refused_unanswerable": 0.8,
+          "refused_answerable": null,
+          "no_sources_refusals": 4,
+          "retrieval_hit": null,
+          "gold_passage_recall": null,
+          "verdict_accuracy": null,
+          "verdict_unclear": 0,
+          "cites": null,
+          "citation_resolution_match": null,
+          "citation_match": null,
+          "median_seconds": 26.2
+        },
+        "judge": {
+          "judged": 10,
+          "correctness_mean": 1.9,
+          "correctness_raw_mean": 1.9,
+          "correctness_capped": 0,
+          "correctness_2": 0.9,
+          "correctness_0": 0.0,
+          "key_point_coverage": null,
+          "short_answer_match": null,
+          "abstention_correct": 1.0,
+          "abstained_unanswerable": 1.0,
+          "abstained_answerable": null,
+          "citation_matches_gold": {},
+          "citation_status": {
+            "supported": 4
+          },
+          "faithfulness_mean": null,
+          "contradiction": 0.0,
+          "must_not_violated": 0.0,
+          "language_pt": 1.0,
+          "foreign_law": 0.0,
+          "with_other_rule_errors": 0
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "model": "gemini-3.1-pro-preview",
+  "target": {
+    "total": 200,
+    "answerable": 180,
+    "unanswerable": 20
+  },
+  "selected": 200,
+  "shortfall": {
+    "answerable": 0,
+    "unanswerable": 0
+  },
+  "candidates_drafted": 265,
+  "drafter_disagreed_with_intent": {
+    "intended_unanswerable_but_answerable": 4,
+    "intended_unanswerable_but_answerable_by_kind": {
+      "near_miss": 3,
+      "out_of_scope": 1
+    },
+    "intended_answerable_but_no": 2,
+    "answerable_gold_outside_source_passages": 13
+  },
+  "answerable": {
+    "yes": 180,
+    "no": 20
+  },
+  "question_type": {
+    "binary": 86,
+    "factual": 37,
+    "explanatory": 37,
+    "list": 40
+  },
+  "short_answer": {
+    "Depende": 7,
+    "Sim": 35,
+    "null": 4,
+    "Não": 40
+  },
+  "binary_nao_share": 0.488,
+  "nao_swaps": 0,
+  "unanswerable_kind": {
+    "near_miss": 10,
+    "out_of_scope": 10
+  },
+  "confidence": {
+    "high": 200
+  },
+  "by_source_document": {
+    "cfm_res_2217_2018": 57,
+    "unanswerable": 20,
+    "cfm_res_2232_2019": 11,
+    "cfm_res_2314_2022": 21,
+    "cfm_res_1821_2007": 14,
+    "cfm_res_1805_2006": 8,
+    "cfm_res_2004_2012": 10,
+    "cfm_res_2333_2023": 10,
+    "cfm_res_2336_2023": 19,
+    "cfm_res_1999_2012": 13,
+    "cfm_res_2327_2022": 9,
+    "cfm_res_1995_2012": 8
+  },
+  "top_question_starts": [
+    [
+      "Uma clínica",
+      11
+    ],
+    [
+      "Um médico",
+      11
+    ],
+    [
+      "Um paciente",
+      10
+    ],
+    [
+      "Quais são",
+      9
+    ],
+    [
+      "Qual é",
+      7
+    ]
+  ],
+  "review_first": [
+    "q002",
+    "q004",
+    "q023",
+    "q025",
+    "q030",
+    "q038",
+    "q058",
+    "q062",
+    "q080",
+    "q098",
+    "q104",
+    "q109",
+    "q132",
+    "q135",
+    "q138",
+    "q159",
+    "q160",
+    "q162",
+    "q163",
+    "q166",
+    "q167",
+    "q174",
+    "q178",
+    "q192",
+    "q197"
+  ]
+}

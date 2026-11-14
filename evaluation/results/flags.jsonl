@@ -1,0 +1,35 @@
+{"system": "finetuned-rag", "id": "q001", "flag": "verdict_disagreement (judge=True, first_word=sim)"}
+{"system": "finetuned-rag", "id": "q012", "flag": "correctness_capped (2 -> 1)"}
+{"system": "finetuned-rag", "id": "q039", "flag": "correctness_capped (2 -> 1)"}
+{"system": "finetuned-rag", "id": "q056", "flag": "verdict_disagreement (judge=True, first_word=sim)"}
+{"system": "finetuned-rag", "id": "q081", "flag": "correctness_capped (2 -> 1)"}
+{"system": "finetuned-rag", "id": "q111", "flag": "citation_disagreement (judge=partial, parsed=False)"}
+{"system": "finetuned-rag", "id": "q119", "flag": "verdict_disagreement (judge=True, first_word=não)"}
+{"system": "finetuned-rag", "id": "q122", "flag": "verdict_disagreement (judge=True, first_word=não)"}
+{"system": "finetuned-rag", "id": "q163", "flag": "verdict_disagreement (judge=True, first_word=não)"}
+{"system": "finetuned-rag", "id": "q170", "flag": "verdict_disagreement (judge=True, first_word=sim)"}
+{"system": "finetuned-rag", "id": "q185", "flag": "correctness_capped (2 -> 1)"}
+{"system": "finetuned-rag", "id": "q188", "flag": "correctness_capped (2 -> 1)"}
+{"system": "gpt-oss-120b-rag", "id": "q001", "flag": "verdict_disagreement (judge=True, first_word=sim)"}
+{"system": "gpt-oss-120b-rag", "id": "q056", "flag": "verdict_disagreement (judge=True, first_word=sim)"}
+{"system": "gpt-oss-120b-rag", "id": "q065", "flag": "abstention_disagreement (judge=True, lexical=False)"}
+{"system": "gpt-oss-120b-rag", "id": "q065", "flag": "verdict_disagreement (judge=False, first_word=não)"}
+{"system": "gpt-oss-120b-rag", "id": "q119", "flag": "verdict_disagreement (judge=True, first_word=sim)"}
+{"system": "gpt-oss-120b-rag", "id": "q122", "flag": "verdict_disagreement (judge=True, first_word=não)"}
+{"system": "gpt-oss-120b-rag", "id": "q163", "flag": "verdict_disagreement (judge=True, first_word=não)"}
+{"system": "qwen3-4b-rag", "id": "q001", "flag": "verdict_disagreement (judge=True, first_word=sim)"}
+{"system": "qwen3-4b-rag", "id": "q002", "flag": "abstention_disagreement (judge=True, lexical=False)"}
+{"system": "qwen3-4b-rag", "id": "q025", "flag": "abstention_disagreement (judge=True, lexical=False)"}
+{"system": "qwen3-4b-rag", "id": "q049", "flag": "abstention_disagreement (judge=True, lexical=False)"}
+{"system": "qwen3-4b-rag", "id": "q078", "flag": "abstention_disagreement (judge=True, lexical=False)"}
+{"system": "qwen3-4b-rag", "id": "q098", "flag": "abstention_disagreement (judge=True, lexical=False)"}
+{"system": "qwen3-4b-rag", "id": "q101", "flag": "citation_disagreement (judge=partial, parsed=False)"}
+{"system": "qwen3-4b-rag", "id": "q105", "flag": "abstention_disagreement (judge=True, lexical=False)"}
+{"system": "qwen3-4b-rag", "id": "q109", "flag": "abstention_disagreement (judge=True, lexical=False)"}
+{"system": "qwen3-4b-rag", "id": "q119", "flag": "verdict_disagreement (judge=True, first_word=sim)"}
+{"system": "qwen3-4b-rag", "id": "q137", "flag": "abstention_disagreement (judge=True, lexical=False)"}
+{"system": "qwen3-4b-rag", "id": "q138", "flag": "abstention_disagreement (judge=True, lexical=False)"}
+{"system": "qwen3-4b-rag", "id": "q159", "flag": "abstention_disagreement (judge=True, lexical=False)"}
+{"system": "qwen3-4b-rag", "id": "q160", "flag": "abstention_disagreement (judge=True, lexical=False)"}
+{"system": "qwen3-4b-rag", "id": "q166", "flag": "abstention_disagreement (judge=True, lexical=False)"}
+{"system": "qwen3-4b-rag", "id": "q192", "flag": "abstention_disagreement (judge=True, lexical=False)"}

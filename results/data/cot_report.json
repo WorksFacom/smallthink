@@ -1,0 +1,13 @@
+{
+  "problems": 862,
+  "train_rows": 714,
+  "val_rows": 46,
+  "counts": {
+    "rejected:gold_not_mentioned": 101,
+    "accepted:answer": 642,
+    "accepted:refusal_unrelated": 88,
+    "rejected:refusal_not_explained": 1,
+    "accepted:refusal_empty": 30
+  },
+  "model": "qwen3.5:9b"
+}

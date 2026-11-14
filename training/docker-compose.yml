@@ -1,0 +1,38 @@
+# Axolotl QLoRA training + Ollama export.
+#
+# Prereq: NVIDIA Container Toolkit. The cu128 / torch 2.9.1 image is required for
+# Blackwell (RTX 50xx, sm_120), host driver ≥ 570.
+#
+#   docker compose pull train && docker compose run --rm train
+#   docker compose run --rm train python export_ollama.py
+#   docker compose run --rm train bash
+
+x-hf-cache: &hf-cache
+  HF_HOME: /cache/huggingface
+  HUGGINGFACE_HUB_CACHE: /cache/huggingface/hub
+  HF_TOKEN: ${HF_TOKEN:-}
+  HUGGING_FACE_HUB_TOKEN: ${HF_TOKEN:-}
+
+services:
+  train:
+    image: ${AXOLOTL_IMAGE:-axolotlai/axolotl:main-py3.11-cu128-2.9.1}
+    working_dir: /workspace/project
+    ipc: host
+    shm_size: "16gb"
+    gpus: all
+    volumes:
+      - ./:/workspace/project
+      - hf_cache:/cache/huggingface
+      - ./scripts/axolotl-entrypoint.sh:/usr/local/bin/axolotl-entrypoint.sh:ro
+    entrypoint: ["/bin/bash", "/usr/local/bin/axolotl-entrypoint.sh"]
+    environment:
+      <<: *hf-cache
+      NVIDIA_VISIBLE_DEVICES: ${NVIDIA_VISIBLE_DEVICES:-all}
+      JUPYTER_DISABLE: "1"
+      PYTHONNOUSERSITE: "1"
+      # Help small GPUs avoid fragmentation OOMs
+      PYTORCH_CUDA_ALLOC_CONF: ${PYTORCH_CUDA_ALLOC_CONF:-expandable_segments:True}
+    command: ["axolotl", "train", "configs/qwen3_4b_cfm_cot.yml"]
+
+volumes:
+  hf_cache:

@@ -1,0 +1,802 @@
+[
+ {
+  "id": "q001",
+  "question": "A equipe assistente diagnosticou uma doença grave em um idoso. É obrigatório que o próprio paciente seja diretamente informado sobre o seu diagnóstico e prognóstico?"
+ },
+ {
+  "id": "q002",
+  "question": "Ao registrar as diretivas antecipadas de vontade no prontuário de um paciente idoso, qual é a pontuação mínima que ele deve atingir no Mini-Exame do Estado Mental para comprovar que está lúcido?"
+ },
+ {
+  "id": "q003",
+  "question": "Uma clínica vai iniciar uma campanha de marketing no perfil social de um dos seus dermatologistas. É obrigatório que as postagens e anúncios profissionais informem o Registro de Qualificação de Especialista (RQE) junto ao número do conselho regional e ao estado?"
+ },
+ {
+  "id": "q004",
+  "question": "Uma receita de notificação de receita azul do tipo B1, emitida por um psiquiatra em São Paulo, tem validade para a compra do medicamento em uma farmácia no Rio de Janeiro?"
+ },
+ {
+  "id": "q005",
+  "question": "De que maneira o profissional responsável deve proceder para garantir que a recusa terapêutica de um paciente seja exercida de forma consciente e respaldada?"
+ },
+ {
+  "id": "q006",
+  "question": "Um paciente exige que sua teleconsulta psiquiátrica seja inteiramente gravada em áudio e vídeo, argumentando que a gravação é uma exigência para atendimentos online. O médico é obrigado a gravar o atendimento completo?"
+ },
+ {
+  "id": "q007",
+  "question": "Durante uma internação, diversos exames são realizados por setores de apoio e diagnóstico. Os laudos e documentos gerados por essas unidades devem, obrigatoriamente, integrar o prontuário clínico do internado?"
+ },
+ {
+  "id": "q008",
+  "question": "Ao decidir pela limitação de tratamentos que prolongam a vida, a equipe pode suspender também as medidas de conforto com o objetivo de abreviar o óbito do paciente?"
+ },
+ {
+  "id": "q009",
+  "question": "Uma médica intensivista vai tirar trinta dias de férias e possui diversos pacientes internados em estado grave na UTI sob seus cuidados diretos. O que ela deve garantir em relação a esses pacientes antes de se afastar temporariamente?"
+ },
+ {
+  "id": "q010",
+  "question": "Um clínico geral diagnosticou excesso de certos minerais no organismo de um paciente. Ele tem permissão para atribuir essa condição exclusivamente a um erro nutricional ou distúrbio digestivo de forma imediata?"
+ },
+ {
+  "id": "q011",
+  "question": "O gestor de um laboratório pretende contratar profissionais para avaliar gráficos e emitir laudos de exames de imagem a distância. Qual é o registro específico que o médico deve possuir para atuar legalmente na área relacionada a esse procedimento?"
+ },
+ {
+  "id": "q012",
+  "question": "Um médico do esporte atende um fisiculturista amador que deseja aumentar sua massa muscular rapidamente. O profissional pode prescrever esteroides anabolizantes exclusivamente com a finalidade de melhora de desempenho esportivo?"
+ },
+ {
+  "id": "q013",
+  "question": "Uma clínica está adquirindo um novo prontuário eletrônico para registrar seus atendimentos a distância. Qual é o nível de garantia de segurança e o padrão de infraestrutura exigidos para o sistema de registro eletrônico de saúde?"
+ },
+ {
+  "id": "q014",
+  "question": "Um homem plenamente capaz inicia uma greve de fome em protesto pacífico. Qual deve ser a conduta do médico em relação à alimentação compulsória, as informações repassadas e o limite dessa recusa alimentar?"
+ },
+ {
+  "id": "q015",
+  "question": "Um cirurgião plástico vai criar uma arte gráfica para promover seus serviços. Que dados sobre a sua identificação profissional ele precisa inserir na peça?"
+ },
+ {
+  "id": "q016",
+  "question": "Ao dar uma entrevista ao vivo em um canal de televisão aberto para falar sobre prevenção do câncer para o público leigo, o que o médico é expressamente proibido de divulgar aos telespectadores?"
+ },
+ {
+  "id": "q017",
+  "question": "Um paciente sedentário e com maus hábitos alimentares solicita uma prescrição de suplementos de aminoácidos para substituir a necessidade de dietas e exercícios físicos. Como o médico deve orientá-lo sobre essa substituição?"
+ },
+ {
+  "id": "q018",
+  "question": "Após realizar um acompanhamento totalmente a distância, um paciente solicita à clínica que lhe entregue uma versão impressa de todo o seu registro clínico. O paciente tem o direito de receber essa cópia física em papel?"
+ },
+ {
+  "id": "q019",
+  "question": "Como a regulamentação ética justifica a proibição do uso de terapias hormonais prescritas com o objetivo específico de retardar ou reverter o processo natural da velhice em pacientes?"
+ },
+ {
+  "id": "q020",
+  "question": "Um médico assistente decide, por conta própria e sem dialogar com a família, limitar os tratamentos de um doente terminal inconsciente. Essa atitude unilateral é eticamente amparada?"
+ },
+ {
+  "id": "q021",
+  "question": "Como se diferencia o conceito de publicidade daquele de propaganda no contexto da divulgação da atividade dos profissionais de saúde?"
+ },
+ {
+  "id": "q022",
+  "question": "Em um hospital de pequeno porte, a Comissão de Revisão de Prontuários pode assumir e exercer as atribuições que normalmente caberiam à Comissão Permanente de Avaliação de Documentos?"
+ },
+ {
+  "id": "q023",
+  "question": "O profissional de medicina deve se recusar a administrar doses de reposição hormonal em um indivíduo cuja deficiência não tenha sido diagnosticada adequadamente de acordo com as diretrizes vigentes?"
+ },
+ {
+  "id": "q024",
+  "question": "Ao receber exames enviados pelo paciente por um aplicativo comercial, o médico nota que as fotos estão escuras e incompletas. O profissional possui o dever de avaliar se esses dados digitais são seguros e suficientes para a finalidade?"
+ },
+ {
+  "id": "q025",
+  "question": "Quais são os tamanhos oficiais em pixels e formatos de arquivo de imagem exigidos para publicar o número de CRM e RQE no cabeçalho do site pessoal sem sofrer penalidades?"
+ },
+ {
+  "id": "q026",
+  "question": "Um médico compartilhou nos \"stories\" de sua rede social um elogio feito por um paciente sobre o sucesso de sua cirurgia. Essa postagem replicada passa a ser considerada uma publicação do próprio profissional para fins de fiscalização?"
+ },
+ {
+  "id": "q027",
+  "question": "Durante um atendimento multidisciplinar em saúde, surge a dúvida sobre qual profissional tem a competência e a responsabilidade exclusivas para indicar ou prescrever medidas terapêuticas da prática biomolecular. A quem cabe essa atribuição?"
+ },
+ {
+  "id": "q028",
+  "question": "Para que o direito de rejeitar um tratamento eletivo seja respeitado, quais são os estados mentais e cognitivos que um paciente maior de idade deve obrigatoriamente apresentar no momento da decisão?"
+ },
+ {
+  "id": "q029",
+  "question": "Antes de tomar a decisão de suspender tratamentos em um quadro grave e incurável, qual é o dever de informação que o profissional possui perante os representantes do enfermo?"
+ },
+ {
+  "id": "q030",
+  "question": "Estou montando um consultório médico de dermatologia. Qual é a metragem quadrada mínima exigida pela Vigilância Sanitária para a sala de atendimento clínico presencial?"
+ },
+ {
+  "id": "q031",
+  "question": "Profissionais de saúde lidam frequentemente com pedidos de suplementação. Além da prevenção do envelhecimento natural, quais são os outros objetivos proibidos associados aos tratamentos baseados em modulação ou reposição hormonal no ser humano?"
+ },
+ {
+  "id": "q032",
+  "question": "Durante um congresso multiprofissional, surgiu um debate sobre a terminologia correta para os atendimentos mediados por tecnologia. Qual é a diferença conceitual entre telessaúde e telemedicina no âmbito das normas profissionais da medicina?"
+ },
+ {
+  "id": "q033",
+  "question": "De que forma a instituição de saúde deve proceder caso um paciente exija ter acesso permanente às informações registradas durante seu tratamento?"
+ },
+ {
+  "id": "q034",
+  "question": "Ao atender um indivíduo interessado em medicina ortomolecular, o profissional precisa estar atento às proibições éticas. Quais substâncias específicas, além das vitaminas e antioxidantes, têm seu uso proibido quando anunciadas como terapia antienvelhecimento, anticâncer ou antiarteriosclerose?"
+ },
+ {
+  "id": "q035",
+  "question": "Os conteúdos temporários, como vídeos curtos que desaparecem em 24 horas nas redes sociais, também estão sujeitos às regras éticas de divulgação da profissão?"
+ },
+ {
+  "id": "q036",
+  "question": "Uma mulher comparece ao ginecologista exigindo a colocação de um dispositivo intrauterino específico. Antes de acatar a decisão da paciente, o especialista tem o dever de esclarecê-la sobre quais aspectos do método contraceptivo?"
+ },
+ {
+  "id": "q037",
+  "question": "Os médicos de um hospital público decidem, por maioria em assembleia sindical, iniciar uma greve geral e paralisar todos os setores. Como fica o atendimento nos setores de urgência e emergência e o dever dos profissionais diante dessa decisão?"
+ },
+ {
+  "id": "q038",
+  "question": "Caso eu solicite a transferência definitiva do meu registro no Conselho Regional de Medicina de Minas Gerais para a Bahia no mês de abril, terei que pagar a anuidade novamente?"
+ },
+ {
+  "id": "q039",
+  "question": "Um geriatra avalia um idoso com queixas de cansaço. A prescrição de terapias de reposição hormonal pode ser realizada de forma rotineira na prática clínica regular desse profissional para melhorar o vigor do paciente?"
+ },
+ {
+  "id": "q040",
+  "question": "Durante uma consulta, um paciente solicita a prescrição de testosterona simplesmente para se sentir com mais energia. É permitido ao médico prescrever formulações desse hormônio para este paciente?"
+ },
+ {
+  "id": "q041",
+  "question": "Uma paciente apresenta exames que comprovam uma deficiência hormonal específica e um quadro clínico com nexo causal claro. O endocrinologista está autorizado a indicar a terapia de reposição hormonal neste cenário?"
+ },
+ {
+  "id": "q042",
+  "question": "Um cirurgião titular e um médico assistente participam de uma operação. Como se define a responsabilidade de cada profissional envolvido, e por que um não pode assumir a culpa pelos atos exclusivos do outro?"
+ },
+ {
+  "id": "q043",
+  "question": "Qual é a entidade responsável por atuar como autoridade certificadora e distribuir o certificado digital padrão ICP-Brasil aos profissionais interessados?"
+ },
+ {
+  "id": "q044",
+  "question": "Um profissional foi convidado para ser o garoto-propaganda de uma nova terapia alternativa que ainda não possui autorização legal. Ele pode associar sua imagem a esse anúncio?"
+ },
+ {
+  "id": "q045",
+  "question": "Explique a regra de exibição dos dados de identificação obrigatórios para um profissional que utiliza blogs ou plataformas na internet para tratar de assuntos da área médica."
+ },
+ {
+  "id": "q046",
+  "question": "Para que seja realizada a reposição medicamentosa em casos de deficiências comprovadas de vitaminas e ácidos graxos, qual relação obrigatória deve existir entre a reposição dos nutrientes e a meta do tratamento?"
+ },
+ {
+  "id": "q047",
+  "question": "Uma secretaria municipal deseja implementar um núcleo multiprofissional para ampliar o acesso à saúde. Quais tipos de serviços e informações podem ser transferidos utilizando tecnologias de comunicação sob o conceito mais amplo de telessaúde?"
+ },
+ {
+  "id": "q048",
+  "question": "Um orientador acadêmico pretende publicar um artigo utilizando, em grande parte, o trabalho executado pelos seus residentes e dados ainda não publicados de um colega. Explique as restrições éticas sobre a atribuição de autoria, omissão de participantes e uso dessas informações prévias."
+ },
+ {
+  "id": "q049",
+  "question": "Ao atender detentos em um presídio, o clínico identifica marcas evidentes de agressões e tortura. Além das autoridades competentes na esfera criminal, a qual órgão de classe ele é obrigado a denunciar o fato?"
+ },
+ {
+  "id": "q050",
+  "question": "Qual é a alternativa de conduta do médico quando se depara com a recusa do doente em aceitar a terapêutica inicialmente proposta para o seu quadro clínico?"
+ },
+ {
+  "id": "q051",
+  "question": "Como autor de artigos científicos, o pesquisador precisa ser transparente sobre seus vínculos comerciais que possam gerar potenciais conflitos de interesse. A norma exige a declaração de relações com a indústria na área da saúde que envolva quais tipos de produtos e dispositivos?"
+ },
+ {
+  "id": "q052",
+  "question": "Um idoso com doença crônica grave falece no hospital. O médico assistente que vinha acompanhando o caso, estando presente na instituição e descartados indícios de morte violenta, é obrigado a atestar o óbito desse paciente?"
+ },
+ {
+  "id": "q053",
+  "question": "Um especialista atende em seu consultório particular e decide que não quer mais prestar serviços a um indivíduo que o procurou com queixas leves. O profissional é livre para recusar esse atendimento de acordo com a sua própria vontade?"
+ },
+ {
+  "id": "q054",
+  "question": "Um grupo de pesquisadores quer saber se o Conselho Federal de Medicina possui a prerrogativa legal de definir o caráter experimental de procedimentos médicos. Isso faz parte das atribuições do órgão?"
+ },
+ {
+  "id": "q055",
+  "question": "Um médico concluiu diversos cursos sobre o uso de vitaminas e minerais. Ele pode anunciar em sua clínica que possui a especialidade de prática ortomolecular?"
+ },
+ {
+  "id": "q056",
+  "question": "Um intensivista cogita suspender procedimentos que prolongam a vida de um homem internado na UTI. Essa conduta médica é permitida?"
+ },
+ {
+  "id": "q057",
+  "question": "Qual é a diretriz para a manutenção e o conteúdo das placas internas de sinalização de um estabelecimento que servem para identificar os profissionais integrantes do corpo clínico?"
+ },
+ {
+  "id": "q058",
+  "question": "Quais são os critérios de desempate oficiais estabelecidos pelo Ministério da Educação para os processos seletivos de programas de residência médica no Brasil?"
+ },
+ {
+  "id": "q059",
+  "question": "O administrador de um ambulatório pretende digitalizar os prontuários e descartar anotações de enfermagem antigas para economizar espaço no servidor. O método de digitalização pode suprimir dados considerados irrelevantes pelo gestor?"
+ },
+ {
+  "id": "q060",
+  "question": "Com o objetivo de divulgar seu trabalho nas redes sociais, um dermatologista pede que seus pacientes assinem um termo autorizando a exibição de fotos. Com essa autorização formal, o profissional pode publicar imagens que tornem os pacientes reconhecíveis?"
+ },
+ {
+  "id": "q061",
+  "question": "Um médico foi convidado por um programa de televisão para apresentar um novo método terapêutico recém-descoberto, mas que ainda não possui reconhecimento científico pelos órgãos competentes. Ele tem autorização para divulgar essa descoberta ao público geral durante a entrevista?"
+ },
+ {
+  "id": "q062",
+  "question": "Um médico endocrinologista atende um paciente saudável de cinquenta anos que pede a prescrição de terapia hormonal exclusivamente para modular e prevenir o envelhecimento. O profissional está autorizado a prescrever o tratamento com esse objetivo?"
+ },
+ {
+  "id": "q063",
+  "question": "Quando um ente associativo de profissionais da medicina realiza uma publicidade indevida, quem é a pessoa que responde ativamente por essa divulgação?"
+ },
+ {
+  "id": "q064",
+  "question": "Quais são as três finalidades principais para as quais o uso de esteroides androgênicos e anabolizantes é expressamente vedado na prática médica?"
+ },
+ {
+  "id": "q065",
+  "question": "Um paciente com hipertensão deseja realizar seu acompanhamento clínico exclusivamente por videochamadas. O médico assistente tem permissão para conduzir o tratamento dessa doença crônica utilizando a modalidade a distância de forma ininterrupta?"
+ },
+ {
+  "id": "q066",
+  "question": "O médico especialista concluiu o tratamento para o qual o paciente havia sido encaminhado por outro colega. Ele deve obrigatoriamente enviar o doente de volta ao assistente inicial com os devidos relatórios e informações?"
+ },
+ {
+  "id": "q067",
+  "question": "No contexto da relação médico-paciente, como a norma diferencia a exigência de consentimento em casos de perigo iminente de morte em comparação com tratamentos eletivos para adultos capazes?"
+ },
+ {
+  "id": "q068",
+  "question": "Como se diferencia a exigência do tempo de guarda para os prontuários mantidos exclusivamente em papel em relação àqueles que foram arquivados eletronicamente em meio óptico ou digitalizado?"
+ },
+ {
+  "id": "q069",
+  "question": "Para facilitar o acompanhamento compartilhado, médicos pretendem realizar a troca de informações identificadas de saúde utilizando plataformas informatizadas. Essa prática é permitida pelas normativas éticas vigentes?"
+ },
+ {
+  "id": "q070",
+  "question": "A prescrição de hormônios sem a devida comprovação científica de superioridade clínica é proibida quando utiliza certos apelos. Quais são as três formas de divulgação ou formulação expressamente vedadas nesse contexto?"
+ },
+ {
+  "id": "q071",
+  "question": "Qual é o órgão responsável por autorizar novos procedimentos em medicina e oficializar a sua prática para os médicos no país?"
+ },
+ {
+  "id": "q072",
+  "question": "Inúmeras instituições vêm oferecendo treinamentos sobre hormônios. Como as normativas éticas abordam a realização de cursos e eventos voltados a estimular possíveis benefícios de terapias androgênicas para hipertrofia?"
+ },
+ {
+  "id": "q073",
+  "question": "Um paciente chega ao pronto-socorro inconsciente e com hemorragia grave. Nessas circunstâncias, o plantonista pode realizar os procedimentos cirúrgicos necessários sem aguardar a autorização do representante legal?"
+ },
+ {
+  "id": "q074",
+  "question": "Se um cirurgião presenciar um colega da equipe cometendo atos que contrariem os postulados éticos durante uma operação, a quais instâncias ou órgãos ele tem o dever institucional de encaminhar a denúncia do ocorrido?"
+ },
+ {
+  "id": "q075",
+  "question": "Durante uma interação com seguidores, um paciente pergunta se a clínica médica tem uma tabela fixa. O médico pode informar abertamente os valores de suas consultas e as formas de pagamento aceitas em seu perfil oficial?"
+ },
+ {
+  "id": "q076",
+  "question": "Quais são as situações clínicas específicas em que o uso do ácido etilenodiaminotetracético (EDTA) é expressamente proibido por falta de comprovação científica de benefícios?"
+ },
+ {
+  "id": "q077",
+  "question": "Ao confeccionar a nova fachada e os materiais impressos de um estabelecimento de saúde, a administração precisa incluir os dados do responsável pela unidade. Quais informações específicas sobre o diretor técnico devem constar obrigatoriamente nesses anúncios?"
+ },
+ {
+  "id": "q078",
+  "question": "Uma clínica privada propõe um contrato no qual os honorários do cirurgião plástico só serão pagos integralmente se o resultado estético desejado for atingido. Esse condicionamento financeiro ao sucesso do tratamento é permitido?"
+ },
+ {
+  "id": "q079",
+  "question": "Um pesquisador médico deseja realizar uma intervenção no genoma de um paciente para tratar uma doença grave. É permitido realizar essa modificação genética, desde que não afete as células germinativas e a descendência?"
+ },
+ {
+  "id": "q080",
+  "question": "Qual é a cor da via da receita de controle especial que fica retida na farmácia quando prescrevo um antibiótico para amigdalite bacteriana aguda?"
+ },
+ {
+  "id": "q081",
+  "question": "Uma seguradora de vida entra em contato com o médico assistente solicitando um relatório detalhado sobre as circunstâncias da morte de um segurado para liberar a indenização. Sem o consentimento expresso do representante legal, qual é o único documento apto a fornecer informações à empresa?"
+ },
+ {
+  "id": "q082",
+  "question": "Um doente internado recusa um procedimento médico, expondo-se a perigo de morte, mas está com as mãos enfaixadas e não consegue assinar documentos. É permitido registrar essa decisão por meio de gravação em vídeo e áudio?"
+ },
+ {
+  "id": "q083",
+  "question": "Um empresário que acaba de inaugurar uma policlínica argumenta que as diretrizes éticas se aplicam exclusivamente aos médicos como pessoas físicas no exercício direto da profissão. As organizações e empresas de prestação de serviços de saúde também estão sujeitas às normas éticas profissionais?"
+ },
+ {
+  "id": "q084",
+  "question": "Durante a implantação de um serviço digital, surgiu a dúvida se as avaliações médicas precisavam ocorrer necessariamente por videochamada. O exercício da medicina mediado por tecnologias deve ser feito de forma imediata ou pode ocorrer com defasagem de tempo?"
+ },
+ {
+  "id": "q085",
+  "question": "Um médico deseja prescrever um medicamento para uma indicação diferente daquela prevista na bula (off-label). É permitido realizar essa prescrição?"
+ },
+ {
+  "id": "q086",
+  "question": "Uma clínica médica foca seu atendimento em recomendar mudanças na dieta e na rotina de exercícios físicos para alcançar o envelhecimento ativo. Essa abordagem, baseada em um estilo de vida saudável, deve ser encorajada na prática clínica?"
+ },
+ {
+  "id": "q087",
+  "question": "O gestor de tecnologia de um hospital precisa contratar um sistema de gerenciamento eletrônico de documentos (GED) para controlar os prontuários digitalizados. Quais são as características mínimas exigidas para esse software?"
+ },
+ {
+  "id": "q088",
+  "question": "Dois cirurgiões realizam uma troca de informações clínicas por videoconferência para discutir a melhor abordagem terapêutica para um caso complexo. O especialista que prestou o auxílio virtual passa a ser também obrigado a realizar o acompanhamento presencial do doente?"
+ },
+ {
+  "id": "q089",
+  "question": "Uma médica recém-formada deseja começar a atender pacientes por meio de plataformas digitais privadas. Para atuar na modalidade a distância com validade legal, que tipo específico de recurso de certificação ela precisará possuir?"
+ },
+ {
+  "id": "q090",
+  "question": "Existe ausência de comprovação científica para a existência de qual condição clínico-patológica específica nas mulheres quando relacionada a baixos níveis hormonais?"
+ },
+ {
+  "id": "q091",
+  "question": "A ética profissional proíbe estritamente que o médico cause dano ao paciente, seja por ação ou omissão. Quais são as três caracterizações técnicas ou jurídicas específicas que definem e classificam esse tipo de dano?"
+ },
+ {
+  "id": "q092",
+  "question": "Para evitar conflitos de interesse, o profissional de saúde não pode obter vantagens financeiras decorrentes de sua influência direta sobre os pacientes. O recebimento de benefícios não é permitido pelo encaminhamento de procedimentos e pela prescrição ou comercialização de quais tipos de produtos?"
+ },
+ {
+  "id": "q093",
+  "question": "Ao lidar com práticas pretensamente terapêuticas, o profissional deve sempre respeitar a ética médica. Quais são os dois princípios fundamentais citados que devem nortear o médico para proteger o paciente?"
+ },
+ {
+  "id": "q094",
+  "question": "Um laboratório quer testar uma nova droga contra hipertensão e propõe que metade dos voluntários receba apenas placebo de maneira isolada. Se já existe método profilático ou terapêutico eficaz contra a doença, o cardiologista pode conduzir esse experimento?"
+ },
+ {
+  "id": "q095",
+  "question": "No caso de uma campanha irregular veiculada no perfil oficial de um hospital filantrópico, qual profissional específico será responsabilizado perante o conselho regional?"
+ },
+ {
+  "id": "q096",
+  "question": "Em meio a uma investigação policial no hospital, o delegado solicita que o psiquiatra plantonista administre uma substância no suspeito para facilitar o interrogatório. É ético utilizar meios que alterem a consciência nesse contexto?"
+ },
+ {
+  "id": "q097",
+  "question": "Uma pessoa designou um representante para tomar decisões de saúde em seu nome caso ficasse incapaz. Esse representante pode exigir que a equipe médica adote uma conduta que contrarie os preceitos éticos vigentes?"
+ },
+ {
+  "id": "q098",
+  "question": "Se eu diagnosticar um atleta profissional com hipogonadismo e prescrever testosterona, como funciona o processo para solicitar a Isenção de Uso Terapêutico junto à Autoridade Brasileira de Controle de Dopagem?"
+ },
+ {
+  "id": "q099",
+  "question": "Durante um surto psicótico, um indivíduo com transtorno mental grave é levado ao hospital. A equipe médica pode submeter essa pessoa a tratamento e internação contra a sua própria vontade?"
+ },
+ {
+  "id": "q100",
+  "question": "Por qual motivo a indicação de doses de vitaminas, proteínas e sais minerais que ultrapassam os limites de segurança (megadoses) é vedada no exercício da medicina para a prevenção primária e secundária?"
+ },
+ {
+  "id": "q101",
+  "question": "Qual é o órgão regulador brasileiro que proibiu a comercialização, fabricação, manipulação e propaganda de Moduladores Seletivos do Receptor Androgênico (SARMS) no país?"
+ },
+ {
+  "id": "q102",
+  "question": "Quando os procedimentos que prolongam a vida são limitados, quais são as dimensões de conforto e os tipos de assistência que o enfermo deve continuar recebendo?"
+ },
+ {
+  "id": "q103",
+  "question": "Explique como o profissional de saúde deve conduzir o caso se houver divergência entre as orientações expressas nas diretivas antecipadas do paciente e qualquer outro parecer não médico em relação à manutenção da vida."
+ },
+ {
+  "id": "q104",
+  "question": "No contexto da recusa terapêutica, quais são as frações menores do sangue humano que a doutrina das Testemunhas de Jeová geralmente permite que seus fiéis recebam durante uma cirurgia?"
+ },
+ {
+  "id": "q105",
+  "question": "Uma clínica contrata um escritório de advocacia para cobrar amigável e judicialmente os pacientes inadimplentes. Como a equipe deve conduzir o manejo das informações clínicas e de diagnóstico no momento de exigir o pagamento desses honorários devidos?"
+ },
+ {
+  "id": "q106",
+  "question": "O uso de tratamentos ainda não aprovados comercialmente costuma gerar insegurança. Para que a utilização de uma terapêutica experimental seja validada na prática médica, quais são as condições prévias fundamentais que devem ser atendidas junto aos órgãos competentes e ao paciente?"
+ },
+ {
+  "id": "q107",
+  "question": "Uma gestora de saúde exige que seus contratados realizem exclusivamente atendimentos online, mas um dos profissionais se recusa a avaliar certos casos sem exame físico. Como se configura a autonomia do médico para recusar o formato virtual?"
+ },
+ {
+  "id": "q108",
+  "question": "O coordenador de um curso de medicina quer incluir uma disciplina focada no atendimento digital para capacitar os futuros egressos. Quais são as áreas específicas de capacitação que o médico deve buscar para exercer essa modalidade?"
+ },
+ {
+  "id": "q109",
+  "question": "É permitido que uma clínica médica composta exclusivamente por três médicos sócios e que realiza apenas consultas ambulatoriais opte pelo regime tributário do Simples Nacional?"
+ },
+ {
+  "id": "q110",
+  "question": "Um médico deixou de prestar serviços para uma plataforma institucional de teleatendimento corporativo e precisa consultar o histórico de um paciente que acompanhava. O profissional deve ter garantia de acesso a esses dados após o seu desligamento?"
+ },
+ {
+  "id": "q111",
+  "question": "Explique o motivo pelo qual a prescrição de Moduladores Seletivos do Receptor Androgênico (SARMS) é totalmente vedada na prática médica para qualquer tipo de indicação."
+ },
+ {
+  "id": "q112",
+  "question": "Ocorrendo discordância insuperável entre a equipe médica e os familiares de um paciente incapaz sobre a conduta clínica necessária, quais são as autoridades competentes que devem ser notificadas para proteger o melhor interesse do doente?"
+ },
+ {
+  "id": "q113",
+  "question": "Durante uma consulta, a paciente na faixa dos cinquenta anos solicita exames para avaliar a menopausa. O ginecologista está autorizado a solicitar testes de saliva para medir estrogênio e progesterona com a finalidade de acompanhar o quadro?"
+ },
+ {
+  "id": "q114",
+  "question": "Uma clínica de saúde ocupacional atende trabalhadores de uma mineradora. É permitido solicitar a análise do tecido capilar desses pacientes com o objetivo específico de diagnosticar contaminação ou intoxicação por metais tóxicos?"
+ },
+ {
+  "id": "q115",
+  "question": "Pacientes frequentemente pedem para registrar seus procedimentos no hospital. Em quais situações específicas uma equipe externa de filmagem está autorizada a capturar imagens durante a realização do ato, e quais são os requisitos?"
+ },
+ {
+  "id": "q116",
+  "question": "Durante o contato inicial por um aplicativo, um plantonista avalia os sintomas relatados pelo usuário para direcioná-lo ao pronto-socorro. Como funciona essa triagem de sintomas a distância e por que ela não é considerada uma consulta médica?"
+ },
+ {
+  "id": "q117",
+  "question": "Ao realizar uma prescrição de medicamento com indicação off-label, o que o médico deve obrigatoriamente observar para não cometer infração ética?"
+ },
+ {
+  "id": "q118",
+  "question": "Um consultório médico contratou uma empresa terceirizada de tecnologia para arquivar os prontuários dos atendimentos virtuais em nuvem. Essa contratação isenta o médico responsável da obrigação legal e ética de guardar os dados dos pacientes?"
+ },
+ {
+  "id": "q119",
+  "question": "Um especialista deseja discutir o caso de um paciente com um colega, enviando exames e histórico por meio digital. É permitido compartilhar essas informações clínicas identificadas com outro profissional?"
+ },
+ {
+  "id": "q120",
+  "question": "Um médico já utiliza um sistema de prontuário eletrônico com certificado digital padrão ICP-Brasil. O que deverá acontecer com a certificação dos sistemas informatizados após a implantação do CRM Digital e qual será o prazo de adaptação?"
+ },
+ {
+  "id": "q121",
+  "question": "Durante uma consulta, uma adolescente com plena capacidade de discernimento confidencia informações íntimas à sua médica e pede que a família não saiba. O profissional deve manter o sigilo perante os responsáveis legais da jovem, desde que isso não cause danos a ela?"
+ },
+ {
+  "id": "q122",
+  "question": "Um chefe de enfermaria avalia o prontuário e discorda da conduta do plantonista. Nessa posição de chefia, ele tem autonomia para alterar a prescrição elaborada pelo seu subordinado?"
+ },
+ {
+  "id": "q123",
+  "question": "Quais são as únicas situações que autorizam a divulgação dos dados contidos no prontuário médico de um indivíduo?"
+ },
+ {
+  "id": "q124",
+  "question": "A manutenção do sigilo profissional é um pilar da relação médico-paciente. Contudo, existem algumas situações excepcionais que autorizam o profissional a revelar um fato do qual tenha conhecimento no exercício da profissão. Quais são as três justificativas que permitem essa quebra de confidencialidade?"
+ },
+ {
+  "id": "q125",
+  "question": "Um oftalmologista foi convidado por uma grande rede de óticas para manter um pequeno consultório no interior da loja, facilitando o acesso e a compra imediata pelos clientes. É permitido aceitar essa proposta de trabalho?"
+ },
+ {
+  "id": "q126",
+  "question": "Uma cirurgiã decide exercer sua objeção de consciência após um paciente rejeitar o tratamento proposto no hospital. A quem ela deve comunicar imediatamente essa interrupção do atendimento para garantir que outro profissional assuma o caso?"
+ },
+ {
+  "id": "q127",
+  "question": "Um psiquiatra foi nomeado pelo juiz para realizar uma avaliação de sanidade mental complexa. Ele tem o direito de receber honorários justos e específicos pela realização desse exame pericial?"
+ },
+ {
+  "id": "q128",
+  "question": "Caso ocorram fatos que prejudiquem a relação de confiança com quem está sendo assistido, o profissional decide renunciar ao atendimento. O que ele deve fornecer obrigatoriamente ao colega que assumirá o caso?"
+ },
+ {
+  "id": "q129",
+  "question": "Durante um plantão, o colega do turno seguinte não aparece. O médico que está encerrando seu horário pode simplesmente ir embora e deixar o posto sem um substituto presente?"
+ },
+ {
+  "id": "q130",
+  "question": "Um paciente psiquiátrico solicita acesso integral ao seu prontuário médico. O profissional que o assiste é sempre obrigado a liberar a leitura e fornecer cópia de todo o material arquivado sobre o caso?"
+ },
+ {
+  "id": "q131",
+  "question": "Uma operadora de plano de saúde envia seu auditor para analisar as terapias de clientes internados. Explique em qual situação excepcional esse auditor tem autorização para modificar os procedimentos instituídos e qual atitude deve tomar em seguida."
+ },
+ {
+  "id": "q132",
+  "question": "Quais são as condições exigidas para que um paciente possa ser submetido a uma terapêutica de caráter experimental ainda não aprovada no país?"
+ },
+ {
+  "id": "q133",
+  "question": "A guarda do histórico de saúde é de responsabilidade institucional, e a sua liberação obedece a regras de confidencialidade. Quais são as três situações exclusivas que autorizam o médico a liberar cópias desse documento sob sua guarda?"
+ },
+ {
+  "id": "q134",
+  "question": "Um médico clínico geral respeita a decisão de um paciente adulto e capaz de recusar uma transfusão de sangue, seguindo todas as formalidades. Esse profissional está isento de cometer infração ética por omissão ao acolher essa recusa?"
+ },
+ {
+  "id": "q135",
+  "question": "Quais são as vacinas que devem ser administradas obrigatoriamente em recém-nascidos logo nas primeiras 24 horas de vida, conforme o calendário do Programa Nacional de Imunizações?"
+ },
+ {
+  "id": "q136",
+  "question": "Quais informações essenciais devem constar obrigatoriamente e em local visível na publicidade de uma clínica privada de saúde?"
+ },
+ {
+  "id": "q137",
+  "question": "Durante uma consulta de rotina, um idoso relata ao seu geriatra quais tratamentos não gostaria de receber caso perca a lucidez. Onde o profissional deve registrar obrigatoriamente essas informações comunicadas diretamente pelo doente?"
+ },
+ {
+  "id": "q138",
+  "question": "Quais são os limites de valor financeiro que um médico pode investir mensalmente em tráfego pago nas redes sociais para impulsionar suas publicações sobre procedimentos estéticos?"
+ },
+ {
+  "id": "q139",
+  "question": "Como funciona a regra ética sobre o uso prático de terapias, considerando a diferença entre as terapêuticas já reconhecidas e aquelas que foram avaliadas e rejeitadas?"
+ },
+ {
+  "id": "q140",
+  "question": "O diretor de um hospital proíbe um cirurgião de utilizar o centro cirúrgico. A norma ética veda que um profissional use sua posição hierárquica para impedir o trabalho de outros caso a motivação envolva quais interesses?"
+ },
+ {
+  "id": "q141",
+  "question": "Para agilizar a rotina de um ambulatório muito lotado, a gestão sugere otimizar a papelada. Em relação a folhas de receituários, laudos e atestados, qual prática prévia ao preenchimento dos dados do paciente é expressamente proibida ao profissional?"
+ },
+ {
+  "id": "q142",
+  "question": "Ao confeccionar panfletos para o seu novo consultório, uma médica pode incluir o título de sua especialidade logo abaixo do seu nome impresso?"
+ },
+ {
+  "id": "q143",
+  "question": "Qual é o prazo mínimo obrigatório de guarda para os prontuários em suporte de papel que não sofreram arquivamento eletrônico ou microfilmagem, e a partir de qual evento esse tempo deve ser contado?"
+ },
+ {
+  "id": "q144",
+  "question": "Uma paciente com câncer está em tratamento ativo com quimioterapia. O médico assistente deseja prescrever uma dosagem de antioxidantes que interfere no mecanismo de ação do quimioterápico para reduzir certos sintomas. Essa prescrição é ética?"
+ },
+ {
+  "id": "q145",
+  "question": "Para garantir a validade das evoluções clínicas, o preenchimento cronológico do prontuário em cada avaliação deve conter, obrigatoriamente, quais quatro elementos de identificação e temporalidade relativos ao profissional?"
+ },
+ {
+  "id": "q146",
+  "question": "Um influenciador da área da saúde faz transmissões ao vivo receitando dietas e medicamentos para os seguidores que enviam suas queixas nos comentários. Explique a regra sobre a prescrição médica sem exame direto e por mídias."
+ },
+ {
+  "id": "q147",
+  "question": "Um hospital universitário planeja transmitir uma cirurgia ao vivo por vídeo para fins de capacitação. Como funcionam as regras de autorização prévia e quais são as restrições quanto ao público que pode receber as imagens do procedimento?"
+ },
+ {
+  "id": "q148",
+  "question": "Após o processo de microfilmagem, o diretor do arquivo médico pode eliminar os prontuários físicos imediatamente por conta própria, sem submetê-los à análise de nenhuma outra instância da unidade hospitalar?"
+ },
+ {
+  "id": "q149",
+  "question": "Um indivíduo acaba de ser preso e o delegado pede que o legista realize o exame de corpo de delito ali mesmo, na cela, por segurança. É ético realizar essa perícia em seres humanos no interior da delegacia?"
+ },
+ {
+  "id": "q150",
+  "question": "O que dizem as evidências sobre a eficácia do uso de vitaminas, antioxidantes e das formulações chamadas de 'hormônios bioidênticos' para promover a longevidade saudável e prevenir a perda funcional da velhice?"
+ },
+ {
+  "id": "q151",
+  "question": "Uma clínica vai configurar seu sistema para a emissão de atestados e receitas em consultas online. Quais são os dados obrigatórios que devem constar no prontuário ao gerar esses documentos a distância?"
+ },
+ {
+  "id": "q152",
+  "question": "Os pais de uma criança com pneumonia grave decidem interromper o tratamento hospitalar por motivos pessoais. Diante desse cenário de risco relevante à saúde, o pediatra pode aceitar a recusa terapêutica apresentada pelos representantes legais do menor?"
+ },
+ {
+  "id": "q153",
+  "question": "O sigilo profissional pode ser flexibilizado ou dispensado quando os registros de saúde deixam de ser físicos e passam a ser armazenados exclusivamente em formato eletrônico?"
+ },
+ {
+  "id": "q154",
+  "question": "O cirurgião chefe da equipe de captação de órgãos de um hospital foi chamado para avaliar um potencial doador. Ele é autorizado a participar do diagnóstico de morte encefálica deste indivíduo?"
+ },
+ {
+  "id": "q155",
+  "question": "Um especialista atende pelo sistema público de saúde, mas percebe que a fila para a cirurgia de um paciente é muito longa. Explique a restrição ética sobre utilizar esse vínculo público para levar o paciente à sua clínica privada e cobrar pelos procedimentos."
+ },
+ {
+  "id": "q156",
+  "question": "O plantonista noturno constata o falecimento de um doente assistido por outro colega. Explique as exceções que autorizam um médico a atestar o óbito de alguém a quem não prestou assistência prévia."
+ },
+ {
+  "id": "q157",
+  "question": "Como se define o conceito de diretivas antecipadas de vontade no contexto dos cuidados e tratamentos médicos?"
+ },
+ {
+  "id": "q158",
+  "question": "Ao incluir uma criança em um ensaio clínico, o termo de consentimento dos pais já foi devidamente assinado. Além da autorização do representante legal, qual documento ou manifestação adicional deve ser obtida junto a esse menor investigado?"
+ },
+ {
+  "id": "q159",
+  "question": "Poderia me explicar como o cartório de notas calcula as taxas e emolumentos para registrar em escritura pública as diretivas antecipadas de vontade de um paciente oncológico?"
+ },
+ {
+  "id": "q160",
+  "question": "Sou gestor de clínica e preciso saber: qual é o prazo máximo estabelecido pela ANS para que um plano de saúde autorize a realização de uma cirurgia de emergência solicitada pelo médico assistente?"
+ },
+ {
+  "id": "q161",
+  "question": "Um homem procurado pela polícia dá entrada no pronto-socorro com ferimentos de bala, e o delegado intimida o plantonista exigindo detalhes para a investigação. Explique como funciona a regra de sigilo quando a revelação do segredo puder expor o paciente a um processo penal."
+ },
+ {
+  "id": "q162",
+  "question": "Ao adquirir um sistema de prontuário eletrônico certificado pela SBIS para meu consultório, em qual linha da declaração do Imposto de Renda Pessoa Física devo lançar esse custo para abatimento?"
+ },
+ {
+  "id": "q163",
+  "question": "É permitido ao médico aplicar de forma experimental uma terapia inovadora que ainda não foi oficialmente liberada para uso no Brasil?"
+ },
+ {
+  "id": "q164",
+  "question": "Caso um paciente envie anonimamente um material publicitário irregular para a comissão de divulgação de assuntos médicos avaliar, qual é o prazo máximo de dias para que a tramitação dessa matéria seja concluída internamente no conselho?"
+ },
+ {
+  "id": "q165",
+  "question": "Na montagem de uma equipe cirúrgica particular, o cirurgião principal costuma enviar a fatura total ao paciente e depois repassa os valores ao anestesista e ao instrumentador. Como deve ser feita a apresentação dos honorários quando outros profissionais participam do atendimento?"
+ },
+ {
+  "id": "q166",
+  "question": "Vou começar a atender via telemedicina na minha clínica no interior. A plataforma de vídeo que usarei precisa ter uma banda larga mínima de 10 Megabits por segundo de velocidade de upload para ser permitida?"
+ },
+ {
+  "id": "q167",
+  "question": "Uma clínica estética focada em longevidade planeja publicar anúncios nas redes sociais prometendo o rejuvenescimento garantido por meio do uso de hormônios. A instituição pode realizar esse tipo de divulgação publicitária?"
+ },
+ {
+  "id": "q168",
+  "question": "A filha de uma paciente idosa em fase terminal não se sente segura com a proposta da equipe de limitar intervenções. É direito dessa representante legal solicitar uma segunda opinião médica sobre o caso?"
+ },
+ {
+  "id": "q169",
+  "question": "Durante a internação, a família discorda da conduta adotada pelo médico titular e solicita que outro especialista avalie o prontuário. O paciente tem o direito de requerer essa segunda opinião ou junta médica?"
+ },
+ {
+  "id": "q170",
+  "question": "Um paciente questiona seu especialista sobre a aplicação de um procedimento cirúrgico recém-lançado no exterior. O médico pode utilizar esse novo método terapêutico no Brasil?"
+ },
+ {
+  "id": "q171",
+  "question": "Um paciente recusa a cirurgia indicada. O cirurgião pode simplesmente aceitar a decisão e encerrar o atendimento sem prestar esclarecimentos sobre os perigos reais e consequências previsíveis dessa escolha?"
+ },
+ {
+  "id": "q172",
+  "question": "Ao avaliar operários de uma fábrica, a médica do trabalho constata que as condições do local adoecem a equipe. Se a empresa ignorar os alertas constantes, a médica tem o dever de denunciar o caso ao Conselho Regional?"
+ },
+ {
+  "id": "q173",
+  "question": "Uma marca famosa de colchões convida um ortopedista renomado para gravar um vídeo publicitário recomendando o produto, destacando a sua profissão para passar mais credibilidade aos consumidores. É permitido que o profissional participe desse tipo de anúncio de empresa comercial?"
+ },
+ {
+  "id": "q174",
+  "question": "Como funciona o cálculo do adicional de insalubridade e do adicional noturno para médicos que atuam como plantonistas contratados sob o regime CLT em hospitais privados?"
+ },
+ {
+  "id": "q175",
+  "question": "Para aumentar sua renda, um pediatra foi contratado para participar da propaganda de uma marca de fraldas e produtos de higiene infantil, conferindo a eles o seu selo de qualidade profissional. O médico tem autorização ética para essa prática?"
+ },
+ {
+  "id": "q176",
+  "question": "Um profissional pretende realizar um procedimento para a remoção de minerais tóxicos que estão em excesso no organismo de um paciente. Quais princípios devem ser obrigatoriamente seguidos ao se avaliar e realizar esse tipo de tratamento?"
+ },
+ {
+  "id": "q177",
+  "question": "Uma clínica adquiriu um equipamento para um novo procedimento estético que já foi avaliado, mas não obteve autorização do órgão competente. O médico responsável pode aplicar essa técnica em seus pacientes?"
+ },
+ {
+  "id": "q178",
+  "question": "Por que o plano de saúde pode negar o reembolso de uma consulta particular se o paciente possui cobertura para livre escolha no contrato, e como ele deve recorrer?"
+ },
+ {
+  "id": "q179",
+  "question": "Os sindicatos e associações da categoria médica estão isentos das regras éticas de comunicação ao público por representarem a classe trabalhadora?"
+ },
+ {
+  "id": "q180",
+  "question": "O diretor de um hospital quer ampliar os serviços virtuais oferecidos à população e aos próprios profissionais da instituição. Quais são as modalidades de teleatendimentos médicos expressamente autorizadas para o exercício profissional?"
+ },
+ {
+  "id": "q181",
+  "question": "Uma clínica de fertilidade está expandindo seus serviços de procriação medicamente assistida. Quais são os três objetivos específicos e finalidades para os quais o médico é terminantemente proibido de criar embriões humanos?"
+ },
+ {
+  "id": "q182",
+  "question": "Um paciente insiste em um tratamento alternativo e assina um termo isentando o doutor de qualquer culpa pelos resultados. Nessa situação, o profissional pode deixar de assumir a responsabilidade pelo ato que indicou?"
+ },
+ {
+  "id": "q183",
+  "question": "O médico é sempre obrigado a acatar os desejos expressos nas diretivas antecipadas de vontade de um paciente que se encontra inconsciente na UTI?"
+ },
+ {
+  "id": "q184",
+  "question": "Para que seja legítima a suspensão de terapias, quais são as condições clínicas exigidas da doença do paciente e de quem a vontade deve ser respeitada?"
+ },
+ {
+  "id": "q185",
+  "question": "Um paciente solicita o prontuário original para levar a outro especialista, alegando que os dados são seus. Como se divide a propriedade física do documento e a titularidade dos dados nele contidos?"
+ },
+ {
+  "id": "q186",
+  "question": "Para garantir que as regras éticas da profissão sejam devidamente cumpridas no dia a dia, a fiscalização não recai sobre uma única entidade. Quais são as três instâncias ou grupos que têm a atribuição oficial de fiscalizar o cumprimento dessas normas?"
+ },
+ {
+  "id": "q187",
+  "question": "Um médico que usa o Instagram tanto para postar fotos de viagens com a família quanto para divulgar seus serviços de clínica médica pode manter esse formato misto no mesmo perfil?"
+ },
+ {
+  "id": "q188",
+  "question": "Um paciente em estado terminal e incapaz de se comunicar deixou diretivas antecipadas recusando suporte artificial. A família, no entanto, exige a intubação. A vontade documentada pelo doente prevalece sobre o desejo dos familiares?"
+ },
+ {
+  "id": "q189",
+  "question": "Um indivíduo dá entrada no pronto-socorro inconsciente e a equipe precisa enviar seus dados para um especialista distante visando auxílio imediato. Nesse cenário de urgência médica, é permitido compartilhar as informações pessoais sem o consentimento explícito do paciente?"
+ },
+ {
+  "id": "q190",
+  "question": "Uma clínica quer inovar nos tratamentos de sarcopenia em idosos e considera incluir a prescrição de Moduladores Seletivos do Receptor Androgênico (SARMS). Essa prescrição é permitida se for exclusivamente para tratar uma patologia?"
+ },
+ {
+  "id": "q191",
+  "question": "Caso um paciente inconsciente não tenha diretivas antecipadas conhecidas, não possua representante legal e os familiares não cheguem a um consenso sobre o tratamento, a quais instâncias ou órgãos o médico pode recorrer?"
+ },
+ {
+  "id": "q192",
+  "question": "Como devo realizar exatamente a destruição física dos prontuários de papel antigos após a digitalização? A fragmentação precisa seguir algum padrão de corte em tiras cruzadas para garantir a inutilização?"
+ },
+ {
+  "id": "q193",
+  "question": "Laboratórios têm oferecido a medição de hormônios como cortisol e melatonina por meio de amostras salivares. Qual é a justificativa técnica e ética que veda a utilização desses exames específicos no diagnóstico de doenças relacionadas à velhice?"
+ },
+ {
+  "id": "q194",
+  "question": "Em um processo ético contra uma clínica, a família alega que todos os sócios são automaticamente culpados por um erro cirúrgico ocorrido no local. A responsabilidade profissional pode ser presumida de forma coletiva nesses casos?"
+ },
+ {
+  "id": "q195",
+  "question": "Se um médico plantonista precisar se ausentar por um impedimento justo e inadiável, e não houver um substituto imediato disponível entre os colegas da equipe, de quem é a obrigação direta de providenciar essa substituição?"
+ },
+ {
+  "id": "q196",
+  "question": "Familiares de um doente em fase terminal e sofrimento intenso pedem que a equipe abrevie a vida dele. Como o médico deve conduzir a assistência diante de uma doença incurável em estágio final?"
+ },
+ {
+  "id": "q197",
+  "question": "Quais são os códigos exatos da CID-10 que justificam legalmente a prescrição de esteroides androgênicos e anabolizantes para o tratamento de deficiências hormonais diagnosticadas em homens adultos?"
+ },
+ {
+  "id": "q198",
+  "question": "De que forma a decisão clínica de limitar procedimentos que prolongam a vida deve ser justificada e formalizada pelo médico responsável?"
+ },
+ {
+  "id": "q199",
+  "question": "Quando o enfermo perde a capacidade de expressar sua vontade de forma autônoma, é permitido que o médico responsável leve em consideração as informações trazidas por um representante previamente designado pelo doente para esse fim?"
+ },
+ {
+  "id": "q200",
+  "question": "Uma dermatologista quer fazer postagens mostrando o \"antes e depois\" de preenchimentos faciais de seus pacientes em sua clínica privada. Ela pode publicar essas demonstrações de resultados estéticos?"
+ }
+]

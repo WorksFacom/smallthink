@@ -1,0 +1,52 @@
+# Evaluation: answers (compare.py), gold set (build_gold.py), judge sets, Gemini judge,
+# scores, and BERTScore. Host networking keeps localhost:8000 pointed at the rag_bot API.
+#
+#   cp config.example.yml config.yml && cp .env.example .env
+#   docker compose run --rm evaluation                       # compare.py config.yml
+#   docker compose run --rm evaluation python score.py       # any script
+#
+# BERTScore (separate PyTorch image; arguments after the service name go to bertscore_eval.py):
+#   mkdir -p .hf_cache
+#   docker compose --profile bertscore run --rm bertscore --baseline finetuned-rag --key-points
+#   TORCH_INDEX_URL=https://download.pytorch.org/whl/cu128 docker compose --profile bertscore build bertscore  # RTX 50xx
+
+services:
+  evaluation:
+    build: .
+    network_mode: host
+    user: "${HOST_UID:-1000}:${HOST_GID:-1000}"
+    environment:
+      HOME: /tmp
+      GROQ_API_KEY: ${GROQ_API_KEY:-}
+      GEMINI_API_KEY: ${GEMINI_API_KEY:-}
+    volumes:
+      - ./config.yml:/app/config.yml:ro
+      - ./answers:/app/answers
+      - ./questions:/app/questions
+      - ./judge_sets:/app/judge_sets
+      - ./judgments:/app/judgments
+      - ./results:/app/results
+      # build_gold.py defaults: ../data_pipeline/data/{passages,qa_pairs_final}.jsonl
+      - ../data_pipeline/data:/data_pipeline/data:ro
+
+  bertscore:
+    profiles: ["bertscore"]
+    build:
+      context: .
+      dockerfile: Dockerfile.bertscore
+      args:
+        TORCH_INDEX_URL: ${TORCH_INDEX_URL:-https://download.pytorch.org/whl/cu126}
+    image: cfm-evaluation-bertscore:latest
+    gpus: all
+    # Host user, so results/ files are not root-owned; caches go to writable paths.
+    user: "${HOST_UID:-1000}:${HOST_GID:-1000}"
+    environment:
+      HOME: /tmp
+      HF_HOME: /hf_cache
+      MPLCONFIGDIR: /tmp/matplotlib
+    volumes:
+      - ./answers:/app/answers:ro
+      - ./questions:/app/questions:ro
+      - ./judgments:/app/judgments:ro
+      - ./results:/app/results
+      - ./.hf_cache:/hf_cache

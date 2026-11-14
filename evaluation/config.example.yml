@@ -1,0 +1,39 @@
+# Questions: JSON array, {"questions": [...]}, or JSONL (build_gold.py writes questions/questions.json).
+questions: questions/questions.json
+out_dir: answers
+# Omit or set null to run every question.
+limit: null
+
+apis:
+  # Fine-tuned model + retrieval. Start the bot first: cd ../rag_bot && docker compose up -d api
+  - name: finetuned-rag
+    type: bot
+    url: http://localhost:8000/v1/answers
+    timeout: 600
+
+  # The baselines below get, per question, the passages the bot retrieved
+  # (rag_from = the bot's answers file), in the bot's prompt. Run the bot first.
+  # Decoding as the bot (temperature 0.2, top_p 0.9, num_ctx 4096, num_predict 1536).
+  # The token cap includes reasoning; a cut-off answer is an error row.
+
+  # Original Qwen3-4B (the checkpoint that was fine-tuned), same quantization,
+  # thinking mode. ollama pull hf.co/Qwen/Qwen3-4B-GGUF:Q5_K_M
+  - name: qwen3-4b-rag
+    type: ollama
+    model: hf.co/Qwen/Qwen3-4B-GGUF:Q5_K_M
+    url: http://localhost:11434
+    rag_from: answers/finetuned-rag.jsonl
+    think: true
+    temperature: 0.2
+    options: {top_p: 0.9, top_k: 40, num_ctx: 4096, num_predict: 1536}
+    timeout: 900
+
+  # Groq has no top_k; gpt-oss returns its reasoning in message.reasoning.
+  - name: gpt-oss-120b-rag
+    type: groq
+    model: openai/gpt-oss-120b
+    api_key_env: GROQ_API_KEY
+    rag_from: answers/finetuned-rag.jsonl
+    temperature: 0.2
+    params: {top_p: 0.9, max_completion_tokens: 1536, reasoning_effort: medium}
+    timeout: 120

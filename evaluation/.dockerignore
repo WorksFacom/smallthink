@@ -1,0 +1,12 @@
+.venv
+__pycache__
+*.pyc
+.git
+.env
+config.yml
+.hf_cache
+answers
+questions
+judge_sets
+judgments
+results

@@ -1,0 +1,34 @@
+{
+  "pairs_judged": 949,
+  "judge_models": {
+    "a": [
+      "gemma4"
+    ],
+    "b": [
+      "qwen3.5:9b"
+    ]
+  },
+  "review_status": {
+    "auto_kept": 755,
+    "auto_discarded": 50,
+    "auto_corrected": 144
+  },
+  "categories": {
+    "a": {
+      "boa": 733,
+      "irrecuperavel": 83,
+      "corrigivel": 132,
+      "erro": 1
+    },
+    "b": {
+      "boa": 843,
+      "irrecuperavel": 59,
+      "corrigivel": 47
+    }
+  },
+  "category_agreement": 806,
+  "mean_score": {
+    "a": 4.281,
+    "b": 4.561
+  }
+}

@@ -1,0 +1,2 @@
+# Only for bertscore_eval.py (pulls torch + transformers; install a CUDA torch first for GPU)
+bert-score>=0.3.13

@@ -1,0 +1,9 @@
+# Extra deps for export_ollama.py when NOT using the Axolotl train image.
+# Prefer: docker compose run --rm train python export_ollama.py
+peft>=0.12.0
+accelerate>=0.33.0
+gguf>=0.10.0
+sentencepiece>=0.2.0
+protobuf>=4.25.0
+numpy>=1.26.0
+# torch: install matching your CUDA/CPU yourself, or use the train container

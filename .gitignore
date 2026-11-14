@@ -1,0 +1,31 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.DS_Store
+
+# data pipeline: only the snapshot used in the thesis is versioned
+data_pipeline/data/*
+!data_pipeline/data/passages.jsonl
+!data_pipeline/data/cot_alpaca_train.jsonl
+!data_pipeline/data/cot_alpaca_val.jsonl
+
+# training inputs (copied from data_pipeline) and outputs (adapters, merged model, GGUF)
+training/data/
+training/outputs/
+
+# rag bot: local copy of the passages
+rag_bot/data/
+
+# evaluation: local config, model cache, intermediate files
+evaluation/config.yml
+evaluation/.hf_cache/
+evaluation/judge_sets/
+evaluation/judgments/batch/
+evaluation/judgments/*batch_state.json
+evaluation/questions/batch/
+evaluation/questions/*batch_state.json
+evaluation/questions/candidates*.jsonl
+evaluation/questions/gold_drafts.jsonl
+evaluation/questions/gold_log.jsonl

@@ -1,0 +1,104 @@
+# Qwen3-4B QLoRA — CFM RAG chain-of-thought, trained on an NVIDIA GeForce RTX 5050
+# (8GB, Blackwell sm_120).
+#
+# One domain stage straight from the released Qwen/Qwen3-4B: Portuguese
+# <Thought>/<Output> over RAG prompts identical to the bot's.
+#
+# Data (data_pipeline: generate_qa → judge → clean → problems → cot), copied to:
+#   data/cot_alpaca_train.jsonl
+#   data/cot_alpaca_val.jsonl
+#
+# Blackwell needs CUDA ≥ 12.8 → train image axolotlai/axolotl:main-py3.11-cu128-2.9.1
+# (host driver ≥ 570).
+#
+# Train:
+#   docker compose run --rm train
+#
+# Tuned for wall-clock time: 4 examples per forward pass (group_by_length keeps
+# padding low), 2 epochs, LR 2e-4. Effective batch stays 16.
+# If OOM: micro_batch_size 2 + gradient_accumulation_steps 8; then
+# sequence_len 1536; then lora_r 8 / lora_alpha 16.
+
+base_model: Qwen/Qwen3-4B
+trust_remote_code: true
+strict: false
+
+# --- quantization / adapter (4B bf16 weights alone are ~8GB → stay 4-bit) ---
+load_in_8bit: false
+load_in_4bit: true
+adapter: qlora
+bnb_4bit_quant_type: nf4
+bnb_4bit_compute_dtype: bfloat16
+bnb_4bit_use_double_quant: true
+
+# --- data ---
+datasets:
+  - path: data/cot_alpaca_train.jsonl
+    type: alpaca
+test_datasets:
+  - path: data/cot_alpaca_val.jsonl
+    type: alpaca
+    split: train
+
+dataset_prepared_path: data/last_run_prepared
+evals_per_epoch: 1
+
+output_dir: outputs/qwen3-4b-cfm-cot
+
+# --- LoRA (rank 16 / alpha 32 as in Athaydes et al. 2025; all linear layers) ---
+lora_r: 16
+lora_alpha: 32
+lora_dropout: 0.05
+lora_target_linear: false
+lora_target_modules:
+  - q_proj
+  - k_proj
+  - v_proj
+  - o_proj
+  - gate_proj
+  - up_proj
+  - down_proj
+
+# --- sequence / batch ---
+# Header + 2–3 passages + question + Thought + answer ≈ 1–1.8k tokens.
+sequence_len: 2048
+sample_packing: false
+eval_sample_packing: false
+pad_to_sequence_len: false
+group_by_length: true
+train_on_inputs: false
+
+micro_batch_size: 4
+gradient_accumulation_steps: 4
+num_epochs: 2
+optimizer: adamw_bnb_8bit
+lr_scheduler: cosine
+learning_rate: 2.0e-4
+warmup_ratio: 0.05
+weight_decay: 0.0
+
+# --- dtype / memory (Blackwell has native BF16) ---
+bf16: true
+fp16: false
+tf32: true
+
+gradient_checkpointing: true
+gradient_checkpointing_kwargs:
+  use_reentrant: false
+
+# SDPA attention: PyTorch's own flash/memory-efficient kernels, no flash-attn
+# build needed for sm_120.
+flash_attention: false
+sdp_attention: true
+xformers_attention: false
+
+# --- logging / checkpoints ---
+logging_steps: 10
+saves_per_epoch: 1
+save_total_limit: 2
+
+dataloader_num_workers: 2
+dataloader_pin_memory: true
+
+special_tokens:
+  pad_token: <|endoftext|>

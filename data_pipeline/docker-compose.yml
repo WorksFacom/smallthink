@@ -1,0 +1,130 @@
+# Training-data pipeline, all models local via Ollama on the host:
+#   ingest → (rag_bot: index passages) → qa → judge → clean → problems → cot
+#
+#   docker compose build
+#   docker compose --profile ingest run --rm ingest
+#   docker compose --profile qa run --rm qa --include-kinds artigo,item --pairs-per-passage 3
+#   docker compose --profile qa run --rm qa --include-kinds considerando,ementa --pairs-per-passage 1
+#   docker compose --profile judge run --rm judge
+#   docker compose --profile clean run --rm clean
+#   docker compose --profile problems run --rm problems
+#   docker compose --profile cot run --rm cot
+#
+# Arguments after the service name are appended to its command.
+
+x-ollama: &ollama
+  build: .
+  image: cfm-data-pipeline:latest
+  extra_hosts:
+    - "host.docker.internal:host-gateway"
+
+services:
+  ingest:
+    <<: *ollama
+    volumes:
+      - ./legal_documents:/app/legal_documents:ro
+      - ./data:/app/data
+    entrypoint: ["python", "ingest_cfm.py", "--input-dir", "legal_documents", "--output-dir", "data"]
+    profiles: ["ingest"]
+
+  qa:
+    <<: *ollama
+    volumes:
+      - ./data:/app/data
+    entrypoint:
+      - python
+      - generate_qa.py
+      - --passages
+      - data/passages.jsonl
+      - --output
+      - data/qa_pairs.jsonl
+      - --base-url
+      - http://host.docker.internal:11434/v1
+      - --model
+      - ${QA_MODEL:-qwen3:4b-instruct}
+    profiles: ["qa"]
+
+  judge:
+    <<: *ollama
+    volumes:
+      - ./data:/app/data
+    entrypoint:
+      - python
+      - judge_qa.py
+      - --input
+      - data/qa_pairs.jsonl
+      - --output
+      - data/qa_pairs_reviewed.jsonl
+      - --clean-output
+      - data/qa_pairs_clean.jsonl
+      - --base-url
+      - http://host.docker.internal:11434/v1
+      - --judge-model-a
+      - ${JUDGE_MODEL_A:-gemma4}
+      - --judge-model-b
+      - ${JUDGE_MODEL_B:-qwen3.5:9b}
+    profiles: ["judge"]
+
+  clean:
+    <<: *ollama
+    volumes:
+      - ./data:/app/data
+      - ../evaluation/questions:/gold:ro
+    entrypoint:
+      - python
+      - clean_qa.py
+      - --input
+      - data/qa_pairs_clean.jsonl
+      - --output
+      - data/qa_pairs_final.jsonl
+      - --rejected
+      - data/qa_pairs_rejected.jsonl
+      - --report
+      - data/qa_clean_report.json
+      - --gold
+      - /gold/gold.jsonl
+      - --base-url
+      - http://host.docker.internal:11434/v1
+    profiles: ["clean"]
+
+  problems:
+    <<: *ollama
+    volumes:
+      - ./data:/app/data
+    entrypoint:
+      - python
+      - build_rag_problems.py
+      - --qa
+      - data/qa_pairs_final.jsonl
+      - --passages
+      - data/passages.jsonl
+      - --output
+      - data/rag_problems.jsonl
+      - --qdrant-url
+      - ${QDRANT_URL:-http://host.docker.internal:6333}
+      - --collection
+      - ${COLLECTION:-cfm_passages}
+      - --base-url
+      - http://host.docker.internal:11434/v1
+    profiles: ["problems"]
+
+  cot:
+    <<: *ollama
+    volumes:
+      - ./data:/app/data
+    entrypoint:
+      - python
+      - generate_cot.py
+      - --problems
+      - data/rag_problems.jsonl
+      - --passages
+      - data/passages.jsonl
+      - --raw
+      - data/cot_raw.jsonl
+      - --out-prefix
+      - data/cot_alpaca
+      - --base-url
+      - http://host.docker.internal:11434/v1
+      - --model
+      - ${COT_MODEL:-qwen3.5:9b}
+    profiles: ["cot"]

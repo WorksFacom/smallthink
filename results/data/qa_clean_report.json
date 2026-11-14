@@ -1,0 +1,166 @@
+{
+  "input": "data/qa_pairs_clean.jsonl",
+  "input_pairs": 899,
+  "final_pairs": 743,
+  "rejected": {
+    "question_cites_source": 42,
+    "near_duplicate": 114
+  },
+  "fonte_lines_rewritten": 857,
+  "final_by_document": {
+    "cfm_res_1821_2007": 35,
+    "cfm_res_1999_2012": 29,
+    "cfm_res_2004_2012": 27,
+    "cfm_res_2217_2018": 393,
+    "cfm_res_2327_2022": 14,
+    "cfm_res_2336_2023": 84,
+    "cfm_res_2333_2023": 16,
+    "cfm_res_1805_2006": 9,
+    "cfm_res_1995_2012": 9,
+    "cfm_res_2232_2019": 54,
+    "cfm_res_2314_2022": 73
+  },
+  "final_by_kind": {
+    "artigo": 525,
+    "item": 108,
+    "ementa": 5,
+    "considerando": 105
+  },
+  "passages_covered": 371,
+  "settings": {
+    "embed_model": "bge-m3",
+    "dedupe_threshold": 0.92,
+    "contamination_threshold": null,
+    "min_question_words": 5,
+    "min_answer_words": 8,
+    "allow_cited_questions": false
+  },
+  "metrics": {
+    "input": {
+      "pairs": 899,
+      "tokens_per_pair": {
+        "mean": 47.07,
+        "std": 15.26,
+        "min": 18,
+        "max": 131
+      },
+      "tokens_per_question_mean": 17.28,
+      "tokens_per_answer_mean": 29.79,
+      "per_pair": {
+        "shannon_entropy_bits": {
+          "mean": 4.727,
+          "std": 0.427,
+          "min": 3.422,
+          "max": 6.185
+        },
+        "mtld": {
+          "mean": 42.877,
+          "std": 14.602,
+          "min": 12.054,
+          "max": 135.52
+        },
+        "fre_pt": {
+          "mean": 34.032,
+          "std": 17.668,
+          "min": -63.379,
+          "max": 90.635
+        }
+      },
+      "term_density": {
+        "top_n": 100,
+        "density": 0.212,
+        "top_terms": [
+          "paciente",
+          "medicina",
+          "médica",
+          "permitido",
+          "vedado",
+          "médicos",
+          "cfm",
+          "profissional",
+          "resolução",
+          "saúde",
+          "deixar",
+          "pacientes",
+          "médico",
+          "realizar",
+          "procedimentos",
+          "conselho",
+          "tratamento",
+          "legal",
+          "proibido",
+          "telemedicina"
+        ]
+      },
+      "corpus": {
+        "vocabulary_size": 3188,
+        "ttr": 0.0753,
+        "mtld": 45.7,
+        "shannon_entropy_bits": 8.59
+      }
+    },
+    "final": {
+      "pairs": 743,
+      "tokens_per_pair": {
+        "mean": 48.07,
+        "std": 15.27,
+        "min": 18,
+        "max": 115
+      },
+      "tokens_per_question_mean": 17.4,
+      "tokens_per_answer_mean": 30.67,
+      "per_pair": {
+        "shannon_entropy_bits": {
+          "mean": 4.746,
+          "std": 0.425,
+          "min": 3.422,
+          "max": 6.058
+        },
+        "mtld": {
+          "mean": 43.11,
+          "std": 14.5,
+          "min": 12.054,
+          "max": 135.52
+        },
+        "fre_pt": {
+          "mean": 32.868,
+          "std": 17.299,
+          "min": -31.4,
+          "max": 88.222
+        }
+      },
+      "term_density": {
+        "top_n": 100,
+        "density": 0.2079,
+        "top_terms": [
+          "paciente",
+          "medicina",
+          "médica",
+          "permitido",
+          "médicos",
+          "vedado",
+          "profissional",
+          "pacientes",
+          "saúde",
+          "deixar",
+          "conselho",
+          "procedimentos",
+          "tratamento",
+          "proibido",
+          "realizar",
+          "médico",
+          "cfm",
+          "obrigado",
+          "situação",
+          "código"
+        ]
+      },
+      "corpus": {
+        "vocabulary_size": 3041,
+        "ttr": 0.0851,
+        "mtld": 46.81,
+        "shannon_entropy_bits": 8.604
+      }
+    }
+  }
+}

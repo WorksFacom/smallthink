@@ -1,0 +1,65 @@
+# CFM RAG bot: question → bge-m3 → Qdrant (top passages) → fine-tuned model in Ollama.
+#
+# Qdrant is not started here; run one on the host (e.g. `docker run -p 6333:6333 qdrant/qdrant`)
+# and point QDRANT_URL at it. Ollama on the host needs:
+#   ollama pull bge-m3
+#   ollama create qwen3-4b-cfm-cot -f <Modelfile from training/export_ollama.py>
+#
+#   cp ../data_pipeline/data/passages.jsonl data/      # or set PASSAGES_FILE
+#   docker compose --profile index run --rm index
+#   docker compose run --rm chat
+#   docker compose up -d api                           # POST /v1/answers
+
+x-host: &host
+  build: .
+  extra_hosts:
+    - "host.docker.internal:host-gateway"
+
+x-rag-env: &rag-env
+  OLLAMA_URL: ${OLLAMA_URL:-http://host.docker.internal:11434}
+  QDRANT_URL: ${QDRANT_URL:-http://host.docker.internal:6333}
+  QDRANT_API_KEY: ${QDRANT_API_KEY:-}
+  GEN_MODEL: ${GEN_MODEL:-qwen3-4b-cfm-cot}
+  EMBED_MODEL: ${EMBED_MODEL:-bge-m3}
+  COLLECTION: ${COLLECTION:-cfm_passages}
+  TOP_K: ${TOP_K:-3}
+  MIN_SCORE: ${MIN_SCORE:-0.56}
+  NUM_CTX: ${NUM_CTX:-4096}
+  TEMPERATURE: ${TEMPERATURE:-0.2}
+  ABSTAIN_WITHOUT_SOURCES: ${ABSTAIN_WITHOUT_SOURCES:-1}
+
+services:
+  index:
+    <<: *host
+    profiles: ["index"]
+    volumes:
+      - ${PASSAGES_FILE:-./data/passages.jsonl}:/data/passages.jsonl:ro
+    environment:
+      QDRANT_API_KEY: ${QDRANT_API_KEY:-}
+    command:
+      - python
+      - index_passages.py
+      - --input
+      - /data/passages.jsonl
+      - --qdrant-url
+      - ${QDRANT_URL:-http://host.docker.internal:6333}
+      - --base-url
+      - ${OLLAMA_URL:-http://host.docker.internal:11434}
+      - --embed-model
+      - ${EMBED_MODEL:-bge-m3}
+      - --collection
+      - ${COLLECTION:-cfm_passages}
+      - --recreate
+
+  chat:
+    <<: *host
+    stdin_open: true
+    tty: true
+    environment: *rag-env
+
+  api:
+    <<: *host
+    ports:
+      - "${API_PORT:-8000}:8000"
+    environment: *rag-env
+    command: ["python", "api.py", "--host", "0.0.0.0", "--port", "8000"]
